@@ -19,12 +19,12 @@ sudo apt-get install -y git >/dev/null
 
 echo "Cloning Omadeb..."
 rm -rf ~/.local/share/omakub
-git clone https://github.com/basecamp/omakub.git ~/.local/share/omakub >/dev/null
-if [[ $OMAKUB_REF != "master" ]]; then
-  cd ~/.local/share/omakub
-  git fetch origin "${OMAKUB_REF:-stable}" && git checkout "${OMAKUB_REF:-stable}"
+git clone git@github.com:prithvijitguha/omadeb.git ~/.local/share/omakub >/dev/null
+if [[ $OMADEB_REF != "master" ]]; then
+  cd ~/.local/share/omadeb
+  git fetch origin "${OMADEB_REF:-stable}" && git checkout "${OMADEB_REF:-stable}"
   cd -
 fi
 
 echo "Installation starting..."
-source ~/.local/share/omakub/install.sh
+source ~/.local/share/omadeb/install.sh
