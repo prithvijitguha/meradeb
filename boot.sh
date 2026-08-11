@@ -18,8 +18,8 @@ sudo apt-get update >/dev/null
 sudo apt-get install -y git >/dev/null
 
 echo "Cloning Omadeb..."
-rm -rf ~/.local/share/omakub
-git clone git@github.com:prithvijitguha/omadeb.git ~/.local/share/omakub >/dev/null
+rm -rf ~/.local/share/omadeb
+git clone git@github.com:prithvijitguha/omadeb.git ~/.local/share/omadeb >/dev/null
 if [[ $OMADEB_REF != "master" ]]; then
   cd ~/.local/share/omadeb
   git fetch origin "${OMADEB_REF:-stable}" && git checkout "${OMADEB_REF:-stable}"

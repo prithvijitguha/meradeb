@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source $OMAKUB_PATH/defaults/bash/functions
+source $omadeb_PATH/defaults/bash/functions
 
 AVAILABLE_WEB_APPS=("Chat GPT" "Google Photos" "Google Contacts" "Tailscale")
 apps=$(gum choose "${AVAILABLE_WEB_APPS[@]}" --no-limit --height 6 --header "Select web apps")
