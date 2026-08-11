@@ -11,9 +11,9 @@ source ~/.local/share/omadeb/install/check-version.sh
 
 # Ask for app choices
 echo "Get ready to make a few choices..."
-source ~/.local/share/omakub/install/terminal/required/app-gum.sh >/dev/null
-source ~/.local/share/omakub/install/first-run-choices.sh
-source ~/.local/share/omakub/install/identification.sh
+source ~/.local/share/omadeb/install/terminal/required/app-gum.sh >/dev/null
+source ~/.local/share/omadeb/install/first-run-choices.sh
+source ~/.local/share/omadeb/install/identification.sh
 
 # Desktop software and tweaks will only be installed if we're running Gnome
 if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
