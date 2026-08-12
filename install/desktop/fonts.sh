@@ -13,5 +13,10 @@ unzip iafonts.zip -d iaFonts
 cp iaFonts/iA-Fonts-master/iA\ Writer\ Mono/Static/iAWriterMonoS-*.ttf ~/.local/share/fonts
 rm -rf iafonts.zip iaFonts
 
+wget -O JetBrainsMono.zip https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+unzip -o JetBrainsMono.zip -d JetBrainsMono
+cp JetBrainsMono/*.ttf ~/.local/share/fonts
+rm -rf JetBrainsMono.zip JetBrainsMono
+
 fc-cache
 cd -
