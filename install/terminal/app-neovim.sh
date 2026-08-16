@@ -16,7 +16,6 @@ if ! command -v nvim >/dev/null 2>&1; then
 fi
 
 # Luarocks and Tree-sitter CLI
-
 if ! dpkg -s luarocks >/dev/null 2>&1 ||
   ! dpkg -s tree-sitter-cli >/dev/null 2>&1; then
   sudo apt update
@@ -24,38 +23,26 @@ if ! dpkg -s luarocks >/dev/null 2>&1 ||
 fi
 
 # LAZYVIM CONFIGURATION
-
 if [ ! -d "$HOME/.config/nvim" ]; then
-  echo "Installing Neovim configuration..."
-
   mkdir -p "$HOME/.config"
-
   cp -R "$HOME/.local/share/omadeb/configs/neovim" \
     "$HOME/.config/nvim"
-
   # Remove the .git folder so the configuration can be managed
   # in your own repository.
   rm -rf "$HOME/.config/nvim/.git"
-
   # Make everything match the terminal transparency
   mkdir -p "$HOME/.config/nvim/plugin/after"
-
   cp "$HOME/.local/share/omadeb/configs/neovim/transparency.lua" \
     "$HOME/.config/nvim/plugin/after/"
-
   # Default to Tokyo Night theme
   cp "$HOME/.local/share/omadeb/themes/tokyo-night/neovim.lua" \
     "$HOME/.config/nvim/lua/plugins/theme.lua"
-
   # Ensure editor.neo-tree is used by default
   cp "$HOME/.local/share/omadeb/configs/neovim/lazyvim.json" \
     "$HOME/.config/nvim/"
-else
-  echo "Neovim configuration already exists. Skipping."
 fi
 
 # NEOVIM DESKTOP ENTRY
-
 if [ -d "$HOME/.local/share/applications" ]; then
   if [ -f "$HOME/.local/share/omadeb/applications/Neovim.sh" ]; then
     sudo rm -f /usr/share/applications/nvim.desktop
@@ -67,7 +54,7 @@ fi
 # VIM SETUP
 if [ ! -d "$HOME/.config/.vim" ]; then
   mkdir -p "$HOME/.config/.vim"
-  cp "$HOME/.local/share/omadeb/.vimrc" \
+  cp "$HOME/.local/share/omadeb/configs/.vimrc" \
     "$HOME/.vimrc"
   cp -R "$HOME/.local/share/omadeb/configs/.vim/" \
     "$HOME/.config/.vim/"
