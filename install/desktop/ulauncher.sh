@@ -1,9 +1,8 @@
 #!/bin/bash
 
-sudo add-apt-repository universe -y
-sudo add-apt-repository ppa:agornostal/ulauncher -y
-sudo apt update
-sudo apt install ulauncher -y
+wget -o "https://github.com/Ulauncher/Ulauncher/releases/download/5.15.15/ulauncher_5.15.15_all.deb"
+sudo apt install ./ulauncher_5.15.15_all.deb -y
+rm ulauncher_5.15.15_all.deb
 
 # Start ulauncher to have it populate config before we overwrite
 mkdir -p ~/.config/autostart/
