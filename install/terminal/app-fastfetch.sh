@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if command -v fastfetch >/dev/null 2>&1; then
+if ! command -v fastfetch >/dev/null 2>&1; then
   # Display system information in the terminal
   wget "https://github.com/fastfetch-cli/fastfetch/releases/download/2.67.1/fastfetch-linux-amd64.deb"
   sudo apt install -y ./fastfetch-linux-amd64.deb
