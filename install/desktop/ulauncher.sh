@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -o "https://github.com/Ulauncher/Ulauncher/releases/download/5.15.15/ulauncher_5.15.15_all.deb"
+wget "https://github.com/Ulauncher/Ulauncher/releases/download/5.15.15/ulauncher_5.15.15_all.deb"
 sudo apt install ./ulauncher_5.15.15_all.deb -y
 rm ulauncher_5.15.15_all.deb
 
