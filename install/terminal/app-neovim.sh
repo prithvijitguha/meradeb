@@ -35,3 +35,10 @@ if [[ -d ~/.local/share/applications ]]; then
   sudo rm -rf /usr/local/share/applications/nvim.desktop
   source ~/.local/share/omadeb/applications/Neovim.sh
 fi
+
+# Vim setup
+if [[ -d ~/.config/vim ]]; then
+  mkdir ~/.config/.vim
+  cp ~/.local/share/omadeb/.vimrc ~/.vimrc
+  cp -r ~/.local/share/omadeb/configs/.vim ~/.config/.vim
+fi
