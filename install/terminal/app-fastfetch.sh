@@ -1,11 +1,10 @@
 #!/bin/bash
 
 # Display system information in the terminal
-sudo add-apt-repository -y ppa:zhangsongcui3371/fastfetch
-sudo apt update -y
-sudo apt install -y fastfetch
+wget -o "https://github.com/fastfetch-cli/fastfetch/releases/download/2.67.1/fastfetch-linux-aarch64.deb"
+sudo apt install -y ./fastfetch-linux-aarch64.deb
+rm fastfetch-linux-aarch64.deb
 
-# Only attempt to set configuration if fastfetch is not already set
 if [ ! -f "$HOME/.config/fastfetch/config.jsonc" ]; then
   # Use omadeb fastfetch config
   mkdir -p ~/.config/fastfetch
