@@ -6,3 +6,6 @@ cd wofi
 meson setup build
 ninja -C build
 su -c "ninja -C build install"
+
+# Added tmux configs
+cp -r ~/.local/share/omadeb/configs/wofi/ ~/.config/
