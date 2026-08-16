@@ -2,24 +2,13 @@
 
 # Favorite apps for dock
 apps=(
-  "google-chrome.desktop"
-  "Alacritty.desktop"
-  "Neovim.desktop"
-  "code.desktop"
-  "WhatsApp.desktop"
-  "signal-desktop.desktop"
-  "Zoom.desktop"
-  "spotify.desktop"
-  "steam.desktop"
-  "pinta_pinta.desktop"
-  "md.obsidian.Obsidian.desktop"
-  "Activity.desktop"
-  "Docker.desktop"
-  "Omadeb.desktop"
-  "1password.desktop"
-  "org.gnome.Settings.desktop"
-  "org.gnome.Nautilus.desktop"
-  "localsend_app.desktop"
+  "ghostty"
+  "firefox"
+  "steam"
+  "stremio"
+  "youtube"
+  "whatsapp"
+  "signal"
 )
 
 # Array to hold installed favorite apps
@@ -31,6 +20,7 @@ desktop_dirs=(
   "/usr/share/applications"
   "/usr/local/share/applications"
   "$HOME/.local/share/applications"
+  "$HOME/.steam"
 )
 
 # Check if a .desktop file exists for each app
