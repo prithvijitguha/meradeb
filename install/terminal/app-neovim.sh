@@ -15,7 +15,7 @@ sudo apt install -y luarocks tree-sitter-cli
 # Only attempt to set configuration if Neovim has never been run
 if [ ! -d "$HOME/.config/nvim" ]; then
   # Use LazyVim
-  git clone https://github.com/LazyVim/starter ~/.config/nvim
+  cp ~/.local/share/omadeb/configs/neovim/ ~/.config/nvim/
   # Remove the .git folder, so you can add it to your own repo later
   rm -rf ~/.config/nvim/.git
 
