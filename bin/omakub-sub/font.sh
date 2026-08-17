@@ -15,11 +15,11 @@ set_font() {
 		fc-cache
 		cd -
 		clear
-		source $OMAKUB_PATH/ascii.sh
+		source $OMADEB_PATH/ascii.sh
 	fi
 
 	gsettings set org.gnome.desktop.interface monospace-font-name "$font_name 10"
-	cp "$OMAKUB_PATH/configs/alacritty/fonts/$file_name.toml" ~/.config/alacritty/font.toml
+	cp "$OMADEB_PATH/configs/alacritty/fonts/$file_name.toml" ~/.config/alacritty/font.toml
 	sed -i "s/\"editor.fontFamily\": \".*\"/\"editor.fontFamily\": \"$font_name\"/g" ~/.config/Code/User/settings.json
 }
 
@@ -43,9 +43,9 @@ case $choice in
 	set_font "MesloLGS Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.zip" "ttf"
 	;;
 "> Change size")
-	source $OMAKUB_PATH/bin/omakub-sub/font-size.sh
+	source $OMADEB_PATH/bin/omadeb-sub/font-size.sh
 	exit
 	;;
 esac
 
-source $OMAKUB_PATH/bin/omakub-sub/menu.sh
+source $OMADEB_PATH/bin/omadeb-sub/menu.sh

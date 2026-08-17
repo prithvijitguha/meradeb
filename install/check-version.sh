@@ -17,7 +17,7 @@ if [ "$ID" != "debian" ] || [ $(echo "$VERSION_ID >= 13" | bc) != 1 ]; then
 fi
 
 # Check if running on x86
-# TODO: This was used in OMAKUB, need to check if its still applicable with newer versions
+# TODO: This was used in OMADEB, need to check if its still applicable with newer versions
 ARCH=$(uname -m)
 if [ "$ARCH" != "x86_64" ] && [ "$ARCH" != "i686" ]; then
   echo "$(tput setaf 1)Error: Unsupported architecture detected"
