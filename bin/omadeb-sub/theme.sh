@@ -21,7 +21,6 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
   
   if [ -f "$OMADEB_PATH/themes/$THEME/tmux_theme.conf ]; then
     cp $OMADEB_PATH/themes/$THEME/tmux_theme.conf ~/.config/tmux/tmux_theme.conf
-    tmux info &>/dev/null && tmux source-file ~/.tmux.conf
   fi
 
   source $OMADEB_PATH/themes/$THEME/gnome.sh
