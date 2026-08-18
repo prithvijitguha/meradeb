@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Setting up shell
+echo "Setting up a-shell, debug"
+
 # Configure the bash shell using omadeb defaults
 [ -f ~/.bashrc ] && mv ~/.bashrc ~/.bashrc.bak
 cp ~/.local/share/omadeb/configs/bashrc ~/.bashrc
