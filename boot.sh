@@ -10,7 +10,7 @@ ascii_art='________                      .___    ___.
         \/      \/     \/      \/    \/    \/ '
 
 echo -e "$ascii_art"
-echo "=> Omadeb is for fresh Debian 13 installations only!"
+echo "=> Omadeb is recommended and tested on Debian 13 installations only!"
 echo -e "\nBegin installation (or abort with ctrl+c)..."
 
 sudo apt-get update >/dev/null
