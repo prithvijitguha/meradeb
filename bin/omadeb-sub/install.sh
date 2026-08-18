@@ -9,11 +9,15 @@ CHOICES=(
   "ASDControl        Set brightness on Apple Studio and XDR displays"
   "Brave             Chrome-based browser with built-in ad blocking"
   "Dropbox           Sync files across computers with ease"
+  "Docker            Containerize Applications, Programs"
   "Discord           Communication platform for voice, video, and text messaging"
   "Gimp              Image manipulation tool ala Photoshop"
   "Geekbench         CPU benchmaking tool"
+  "LazyDocker        TUI Version of Docker"
+  "LazyGit           TUI Git Tool"
   "Mainline Kernels  Install newer Linux kernels than Ubuntu defaults"
   "Minecraft         Everyone's favorite blocky building game"
+  "Mise              Run Tasks and Installers easier"
   "OBS Studio        Record screencasts with inputs from both display + webcam"
   "Ollama            Run LLMs, like Meta's Llama3, locally"
   "Retroarch         Play retro games"
@@ -23,6 +27,8 @@ CHOICES=(
   "VirtualBox        Virtual machines to run Windows/Linux"
   "Zoom              Attend and host video chat meetings"
   "Web Apps          Install web apps with their own icon and shell"
+  "Github CLI        Run github commands in the terminal"
+  "Zellij            Terminal Multiplexer"
   "> All             Re-run any of the default installers"
   "<< Back           "
 )
@@ -50,6 +56,11 @@ else
   "ollama") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-ollama.sh" ;;
   "tailscale") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-tailscale.sh" ;;
   "geekbench") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-geekbench.sh" ;;
+  "mise") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-mise.sh" ;;
+  "zellij") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-zellij.sh" ;;
+  "docker") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-docker.sh" ;;
+  "lazydocker") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-lazy-docker.sh" ;;
+  "lazygit") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-lazygit.sh" ;;
   *) INSTALLER_FILE="$OMADEB_PATH/install/desktop/optional/app-$INSTALLER.sh" ;;
   esac
 
