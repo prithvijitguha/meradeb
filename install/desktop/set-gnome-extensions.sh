@@ -16,24 +16,27 @@ gext install tophat@fflewddur.github.io
 gext install AlphabeticalAppGrid@stuarthayhurst
 gext install auto-move-windows@gnome-shell-extensions.gcampax.github.com
 
-# Compile gsettings schemas in order to be able to set them
-SCHEMA_DIR="$HOME/.local/share/gnome-shell/extensions"
+# Compile gsettings schemas
+sudo cp ~/.local/share/gnome-shell/extensions/tactile@lundal.io/schemas/org.gnome.shell.extensions.tactile.gschema.xml \
+  /usr/share/glib-2.0/schemas/
 
-for extension in \
-  tactile@lundal.io \
-  just-perfection-desktop@just-perfection \
-  blur-my-shell@aunetx \
-  space-bar@luchrioh \
-  tophat@fflewddur.github.io \
-  AlphabeticalAppGrid@stuarthayhurst \
-  auto-move-windows@gnome-shell-extensions.gcampax.github.com; do
-  schema="$SCHEMA_DIR/$extension/schemas"
+sudo cp ~/.local/share/gnome-shell/extensions/just-perfection-desktop@just-perfection/schemas/org.gnome.shell.extensions.just-perfection.gschema.xml \
+  /usr/share/glib-2.0/schemas/
 
-  if [ -d "$schema" ]; then
-    sudo cp "$schema"/*.gschema.xml \
-      /usr/share/glib-2.0/schemas/
-  fi
-done
+sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml \
+  /usr/share/glib-2.0/schemas/
+
+sudo cp ~/.local/share/gnome-shell/extensions/space-bar@luchrioh/schemas/org.gnome.shell.extensions.space-bar.gschema.xml \
+  /usr/share/glib-2.0/schemas/
+
+sudo cp ~/.local/share/gnome-shell/extensions/tophat@fflewddur.github.io/schemas/org.gnome.shell.extensions.tophat.gschema.xml \
+  /usr/share/glib-2.0/schemas/
+
+sudo cp ~/.local/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst/schemas/org.gnome.shell.extensions.AlphabeticalAppGrid.gschema.xml \
+  /usr/share/glib-2.0/schemas/
+
+sudo cp ~/.local/share/gnome-shell/extensions/auto-move-windows@gnome-shell-extensions.gcampax.github.com/schemas/org.gnome.shell.extensions.auto-move-windows.gschema.xml \
+  /usr/share/glib-2.0/schemas/
 
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
