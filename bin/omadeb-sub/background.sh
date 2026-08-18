@@ -26,3 +26,5 @@ echo $BACKGROUND_DEST_PATH
 gsettings set org.gnome.desktop.background picture-uri "$BACKGROUND_DEST_PATH"
 gsettings set org.gnome.desktop.background picture-uri-dark "$BACKGROUND_DEST_PATH"
 gsettings set org.gnome.desktop.background picture-options 'zoom'
+
+source $OMADEB_PATH/bin/omadeb-sub/menu.sh
