@@ -8,7 +8,7 @@ Comment=YouTube Music
 Exec=google-chrome --app="https://music.youtube.com" --class=YouTubeMusic
 Terminal=false
 Type=Application
-Icon=music
+Icon=$HOME/.local/share/omadeb/applications/icons/Music.png
 Categories=GTK;
 StartupNotify=true
 StartupWMClass=google-chrome
