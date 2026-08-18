@@ -18,6 +18,11 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
     sed -i "s/color_theme = \".*\"/color_theme = \"Default\"/g" ~/.config/btop/btop.conf
   fi
 
+  
+  if [ -f "$OMADEB_PATH/themes/$THEME/tmux_theme.conf ]; then
+    cp $OMADEB_PATH/themes/$THEME/tmux_theme.conf ~/.config/tmux/tmux_theme.conf
+  fi
+
   source $OMADEB_PATH/themes/$THEME/gnome.sh
   source $OMADEB_PATH/themes/$THEME/tophat.sh
   source $OMADEB_PATH/themes/$THEME/vscode.sh
