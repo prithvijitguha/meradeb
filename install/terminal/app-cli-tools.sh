@@ -49,6 +49,6 @@ if ! command -v hunk >/dev/null 2>&1; then
 fi
 
 # Configure Hunk as Git pager
-if command -v hunk >/dev/null 2>&1; then
+if ! command -v hunk >/dev/null 2>&1; then
   git config --global core.pager "hunk pager"
 fi

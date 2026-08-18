@@ -19,13 +19,13 @@ else
 	INSTALLER=$(echo "$CHOICE" | awk -F ' {2,}' '{print $1}' | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
 	case "$INSTALLER" in
-	"omakub") INSTALLER_FILE="$OMAKUB_PATH/bin/omakub-sub/migrate.sh" ;;
-	"ollama") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-ollama.sh" ;;
-	*) INSTALLER_FILE="$OMAKUB_PATH/install/terminal/app-$INSTALLER.sh" ;;
+	"omadeb") INSTALLER_FILE="$OMADEB_PATH/bin/omadeb-sub/migrate.sh" ;;
+	"ollama") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-ollama.sh" ;;
+	*) INSTALLER_FILE="$OMADEB_PATH/install/terminal/app-$INSTALLER.sh" ;;
 	esac
 
 	source $INSTALLER_FILE && gum spin --spinner globe --title "Update completed!" -- sleep 3
 fi
 
 clear
-source $OMAKUB_PATH/bin/omakub
+source $OMADEB_PATH/bin/omadeb

@@ -1,51 +1,55 @@
 #!/bin/bash
 
-# Favorite apps for dock
 apps=(
-  "google-chrome.desktop"
-  "Alacritty.desktop"
-  "Neovim.desktop"
-  "code.desktop"
-  "WhatsApp.desktop"
-  "signal-desktop.desktop"
-  "Zoom.desktop"
-  "spotify.desktop"
-  "steam.desktop"
-  "pinta_pinta.desktop"
-  "md.obsidian.Obsidian.desktop"
-  "Activity.desktop"
-  "Docker.desktop"
-  "Omadeb.desktop"
-  "1password.desktop"
-  "org.gnome.Settings.desktop"
-  "org.gnome.Nautilus.desktop"
-  "localsend_app.desktop"
+  "ghostty"
+  "firefox"
+  "steam"
+  "stremio"
+  "youtube"
+  "whatsapp"
+  "signal"
 )
 
-# Array to hold installed favorite apps
-installed_apps=()
-
-# Directory where .desktop files are typically stored
 desktop_dirs=(
   "/var/lib/flatpak/exports/share/applications"
   "/usr/share/applications"
   "/usr/local/share/applications"
   "$HOME/.local/share/applications"
+  "$HOME/.steam"
 )
 
-# Check if a .desktop file exists for each app
-for app in "${apps[@]}"; do
+installed_apps=()
+
+find_desktop() {
+  local pattern="$1"
+
   for dir in "${desktop_dirs[@]}"; do
-    if [ -f "$dir/$app" ]; then
-      installed_apps+=("$app")
-      break
+    [[ -d "$dir" ]] || continue
+
+    match=$(find "$dir" -maxdepth 1 -iname "*${pattern}*.desktop" | sort | head -n1)
+
+    if [[ -n "$match" ]]; then
+      basename "$match"
+      return
     fi
   done
+}
+
+for app in "${apps[@]}"; do
+  desktop=$(find_desktop "$app")
+
+  if [[ -n "$desktop" ]]; then
+    installed_apps+=("$desktop")
+  else
+    echo "Skipping $app (not installed)"
+  fi
 done
 
-# Convert the array to a format suitable for gsettings
 favorites_list=$(printf "'%s'," "${installed_apps[@]}")
 favorites_list="[${favorites_list%,}]"
 
-# Set the favorite apps
+echo "Favorites:"
+printf '  %s\n' "${installed_apps[@]}"
+
 gsettings set org.gnome.shell favorite-apps "$favorites_list"
+gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button false

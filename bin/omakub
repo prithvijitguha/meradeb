@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source $OMAKUB_PATH/bin/omakub-sub/header.sh
-source $OMAKUB_PATH/bin/omakub-sub/menu.sh
+source $OMADEB_PATH/bin/omadeb-sub/header.sh
+source $OMADEB_PATH/bin/omadeb-sub/menu.sh
