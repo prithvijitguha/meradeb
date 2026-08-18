@@ -2,11 +2,8 @@
 
 CHOICES=(
   "Omadeb        Update Omadeb itself and run any migrations"
-  "Ollama        Run LLMs, like Meta's Llama3, locally"
-  "LazyGit       TUI for Git"
-  "LazyDocker    TUI for Docker"
   "Neovim        Text editor that runs in the terminal"
-  "Zellij        Adds panes, tabs, and sessions to the terminal"
+  "Tmux        Adds panes, tabs, and sessions to the terminal"
   "<< Back       "
 )
 
