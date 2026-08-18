@@ -1,6 +1,6 @@
 # Omadeb
 
-Turn a fresh Debian installation into a fully-configured, beautiful, and modern web development system by running a single command. That's the one-line pitch for Omakub. No need to write bespoke configs for every essential tool just to get started or to be up on all the latest command-line tools. Omadeb is an opinionated take on what Linux can be at its best.
+Turn a fresh Debian installation into a fully-configured, beautiful, and modern web development system by running a single command. That's the one-line pitch for Omadeb. No need to write bespoke configs for every essential tool just to get started or to be up on all the latest command-line tools. Omadeb is an opinionated take on what Linux can be at its best.
 
 Watch the introduction video and read more at [omadeb.org](https://omadeb.org).
 
@@ -10,7 +10,7 @@ Please help us improve Omadeb's documentation on the [basecamp/omadeb-site repos
 
 ## License
 
-Omakub is released under the [MIT License](https://opensource.org/licenses/MIT).
+Omadeb is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Extras
 

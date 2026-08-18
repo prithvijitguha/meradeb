@@ -9,7 +9,7 @@ source $OMADEB_PATH/applications/About.sh
 source $OMADEB_PATH/applications/Activity.sh
 source $OMADEB_PATH/applications/Neovim.sh
 source $OMADEB_PATH/applications/Docker.sh
-source $OMADEB_PATH/applications/Omakub.sh
+source $OMADEB_PATH/applications/Omadeb.sh
 
 alacritty migrate 2>/dev/null || true
 alacritty migrate -c ~/.config/alacritty/pane.toml 2>/dev/null || true

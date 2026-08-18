@@ -4,7 +4,7 @@ cp ~/.local/share/omadeb/configs/alacritty/btop.toml ~/.config/alacritty/btop.to
 
 # Only attempt to set configuration if btop is not already set
 if [ ! -f "$HOME/.config/btop/btop.conf" ]; then
-  # Use Omakub btop config
+  # Use Omadeb btop config
   mkdir -p ~/.config/btop/themes
   cp ~/.local/share/omadeb/configs/btop.conf ~/.config/btop/btop.conf
 fi

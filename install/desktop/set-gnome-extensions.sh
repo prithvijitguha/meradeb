@@ -3,18 +3,15 @@
 sudo apt install -y gnome-shell-extension-manager gir1.2-gtop-2.0 gir1.2-clutter-1.0
 pipx install gnome-extensions-cli --system-site-packages
 
-# Pause to assure user is ready to accept confirmations
-gum confirm "To install Gnome extensions, you need to accept some confirmations. Ready?"
-
 # Install new extensions
-gext install tactile@lundal.io
-gext install just-perfection-desktop@just-perfection
-gext install blur-my-shell@aunetx
-gext install space-bar@luchrioh
-gext install undecorate@sun.wxg@gmail.com
-gext install tophat@fflewddur.github.io
-gext install AlphabeticalAppGrid@stuarthayhurst
-gext install auto-move-windows@gnome-shell-extensions.gcampax.github.com
+yes | gext install tactile@lundal.io
+yes | gext install just-perfection-desktop@just-perfection
+yes | gext install blur-my-shell@aunetx
+yes | gext install space-bar@luchrioh
+yes | gext install undecorate@sun.wxg@gmail.com
+yes | gext install tophat@fflewddur.github.io
+yes | gext install AlphabeticalAppGrid@stuarthayhurst
+yes | gext install auto-move-windows@gnome-shell-extensions.gcampax.github.com
 
 # Compile gsettings schemas
 sudo cp ~/.local/share/gnome-shell/extensions/tactile@lundal.io/schemas/org.gnome.shell.extensions.tactile.gschema.xml \
