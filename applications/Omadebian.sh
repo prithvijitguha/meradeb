@@ -5,7 +5,7 @@ cat <<EOF >"$HOME/.local/share/applications/Omadebian.desktop"
 Version=1.0
 Name=Omadebian
 Comment=Omadebian Controls
-Exec=alacritty --config-file /home/$USER/.config/alacritty/pane.toml --class=Omadebian --title=Omadebian -e omadebian
+Exec=ghostty --class=Omadeb --title=Omadebian -e zsh -lic 'export OMADEB_PATH="$HOME/.local/share/omadeb"; export PATH="$HOME/.local/share/omadeb/bin:$HOME/.local/bin:$PATH"; omadeb'
 Terminal=false
 Type=Application
 Icon=$HOME/.local/share/omadeb/applications/icons/Omadeb.png
