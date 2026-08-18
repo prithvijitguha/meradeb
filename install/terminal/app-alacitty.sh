@@ -15,5 +15,3 @@ cp ~/.local/share/omadeb/configs/alacritty/font-size.toml ~/.config/alacritty/fo
 alacritty migrate 2>/dev/null || true
 alacritty migrate -c ~/.config/alacritty/pane.toml 2>/dev/null || true
 alacritty migrate -c ~/.config/alacritty/btop.toml 2>/dev/null || true
-
-source ~/.local/share/omadeb/install/desktop/set-alacritty-default.sh
