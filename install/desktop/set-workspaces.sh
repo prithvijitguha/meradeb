@@ -1,13 +1,6 @@
 #!/bin/bash
 set -e
 
-SCHEMA_DIR="$HOME/.local/share/gnome-shell/extensions/workspace-indicator@gnome-shell-extensions.gcampax.github.com/schemas"
-
-# Workspace Indicator: show names instead of previews
-glib-compile-schemas "$SCHEMA_DIR"
-GSETTINGS_SCHEMA_DIR="$SCHEMA_DIR" \
-  gsettings set org.gnome.shell.extensions.workspace-indicator embed-previews false
-
 # Fixed number of workspaces
 gsettings set org.gnome.mutter dynamic-workspaces false
 
