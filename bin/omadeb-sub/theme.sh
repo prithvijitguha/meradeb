@@ -4,11 +4,11 @@ THEME_NAMES=("Tokyo Night" "Catppuccin" "Catppuccin Custom" "Nord" "Everforest" 
 THEME=$(gum choose "${THEME_NAMES[@]}" "<< Back" --header "Choose your theme" --height 12 | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
 if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
-  if [-f ~/.config/alacritty/theme.toml]; then
+  if [ -f ~/.config/alacritty/theme.toml]; then
     cp $OMADEB_PATH/themes/$THEME/alacritty.toml ~/.config/alacritty/theme.toml
   fi
 
-  if [-f ~/.config/zellij/themes/$THEME.kdl]; then
+  if [ -f ~/.config/zellij/themes/$THEME.kdl]; then
     cp $OMADEB_PATH/themes/$THEME/zellij.kdl ~/.config/zellij/themes/$THEME.kdl
     sed -i "s/theme \".*\"/theme \"$THEME\"/g" ~/.config/zellij/config.kdl
   fi
