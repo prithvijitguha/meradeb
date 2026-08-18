@@ -1,11 +1,10 @@
 #!/bin/bash
 
 BACKGROUND_NAMES=(
-  $(find "$OMADEB_PATH/themes" -type f \( -iname "*.jpg" -o -iname "*.png" \) -printf '  "%f"\n')
+  $(find "$OMADEB_PATH/themes" -type f \( -iname "*.jpg" -o -iname "*.png" \) -printf '%f\n')
 )
 
 BACKGROUND=$(gum choose "${BACKGROUND_NAMES[@]}" "<< Back" --header "Choose your background" --height 12)
-
 if [ "$BACKGROUND" = "<< Back" ]; then
   exit 0
 fi
