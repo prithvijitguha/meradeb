@@ -46,7 +46,7 @@ source $OMADEB_PATH/install/terminal/app-fastfetch.sh
 source $OMADEB_PATH/install/terminal/apps-terminal.sh
 
 # Add new desktop applications icons
-source $OMADEB_PATH/applications/Omakub.sh
+source $OMADEB_PATH/applications/Omadeb.sh
 source $OMADEB_PATH/applications/About.sh
 source $OMADEB_PATH/applications/Activity.sh
 source $OMADEB_PATH/applications/Docker.sh
