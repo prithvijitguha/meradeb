@@ -1,12 +1,16 @@
-# Omadeb
+# Omadebian
 
-Turn a fresh Debian installation into a fully-configured, beautiful, and modern web development system by running a single command. That's the one-line pitch for Omadeb. No need to write bespoke configs for every essential tool just to get started or to be up on all the latest command-line tools. Omadeb is an opinionated take on what Linux can be at its best.
+Omadebian is a fork of Omakub introduced my DHH, it takes the same principle and adapts it to Debian, turning an existing Debian
+experience into a wonderfully configured system.
 
-Watch the introduction video and read more at [omadeb.org](https://omadeb.org).
+There are some differences between the original Omakub and Omadebian, namely the original Debian hotkeys are kept intact, tmux instead of zellij and ghostty instead of alacritty.
+That's about it.
+
+For more info check out the original [https://omakub.org/](https://omakub.org/)
 
 ## Contributing to the documentation
 
-Please help us improve Omadeb's documentation on the [basecamp/omadeb-site repository](https://github.com/basecamp/omadeb-site).
+Please help us improve Omakub's documentation on the [basecamp/omakub-site repository](https://github.com/basecamp/omakub-site).
 
 ## License
 
@@ -16,4 +20,4 @@ Omadeb is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 While omadeb is purposed to be an opinionated take, the open source community offers alternative customization, add-ons, extras, that you can use to adjust, replace or enrich your experience.
 
-[⇒ Browse the omadeb extensions.](EXTENSIONS.md)
+[⇒ Browse the omakub extensions.](EXTENSIONS.md)
