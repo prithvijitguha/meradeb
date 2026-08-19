@@ -2,6 +2,7 @@
 
 apps=(
   "ghostty"
+  "tmux"
   "firefox"
   "steam"
   "stremio"
