@@ -2,13 +2,15 @@
 
 apps=(
   "ghostty"
-  "tmux"
+  "Tmux.desktop"
   "firefox"
   "steam"
   "stremio"
   "youtube"
   "whatsapp"
   "signal"
+  "Activity.desktop"
+  "Neovim.desktop"
 )
 
 desktop_dirs=(
