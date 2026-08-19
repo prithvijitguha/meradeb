@@ -8,6 +8,8 @@ apps=(
   "youtube"
   "whatsapp"
   "signal"
+  "Activity"
+  "Neovim"
 )
 
 desktop_dirs=(

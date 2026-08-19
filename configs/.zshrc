@@ -97,9 +97,9 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
 export LANG=en_US.UTF-8
-
+export LC_CTYPE=en_US.UTF-8
+export TZ=Asia/Kolkata
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -141,78 +141,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 # Created by `pipx` on 2026-06-10 15:19:17
 export PATH="$PATH:$HOME/.local/bin"
 
-# Setup for using Rich to make it more like nu-shell
-export LESS='-R'
-
-# Pretty CSV / TSV viewer
-csv() {
-    rich "$1"
-}
-
-# Detect columns
-cols() {
-    python3 - <<EOF
-import pandas as pd
-df = pd.read_csv("$1", nrows=0)
-print("\n".join(df.columns))
-EOF
-}
-
-# Reverse sort CSV by column
-rsortby() {
-    local col="$1"
-    local file="$2"
-
-    python3 - <<EOF
-import pandas as pd
-from rich.console import Console
-from rich.table import Table
-
-df = pd.read_csv("$file").sort_values("$col", ascending=False)
-
-table = Table(show_header=True)
-for c in df.columns:
-    table.add_column(str(c))
-
-for row in df.astype(str).values:
-    table.add_row(*row)
-
-Console().print(table)
-EOF
-}
-
-# Sort CSV by column
-sortby() {
-    local col="$1"
-    local file="$2"
-
-    python3 - <<EOF
-import pandas as pd
-from rich.console import Console
-from rich.table import Table
-
-df = pd.read_csv("$file").sort_values("$col")
-
-table = Table(show_header=True)
-for c in df.columns:
-    table.add_column(str(c))
-
-for row in df.astype(str).values:
-    table.add_row(*row)
-
-Console().print(table)
-EOF
-}
-
-# Pretty JSON
-jsonview() {
-    rich "$1"
-}
-
-# Pretty markdown
-richmd() {
-    rich "$1"
-}
 
 # Better ls
 alias ls='eza --icons=auto'
