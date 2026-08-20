@@ -3,6 +3,12 @@
 Omadebian is a fork of Omakub introduced my DHH, it takes the same principle and adapts it to Debian, turning an existing Debian
 experience into a wonderfully configured system.
 
+Screenshots:
+
+![Desktop](./docs/static/omadebian.png)
+![Desktop](./docs/static/omadebian_2.png)
+![Desktop](./docs/static/omadebian_3.png)
+
 There are some differences between the original Omakub and Omadebian, namely the original Debian hotkeys are kept intact, tmux instead of zellij and ghostty instead of alacritty.
 That's about it.
 
