@@ -20,4 +20,14 @@ btop
 gnome-shell-extension-manager
 gir1.2-gtop-2.0 
 gir1.2-clutter-1.0
-
+mesa-vulkan-drivers 
+libglx-mesa0:i386 
+mesa-vulkan-drivers:i386 
+libgl1-mesa-dri:i386
+steam-installer
+vlc
+libreoffice
+chromium
+gnome-sushi
+gnome-tweak-tool
+flameshot
