@@ -24,7 +24,7 @@ if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
   echo "Installing terminal and desktop tools..."
 
   # Install terminal tools
-  source ~/.local/share/omadeb/install/terminal.sh
+  source ~/.local/share/omadeb/install/install-base-packages.sh
 
   # Install desktop tools and tweaks
   source ~/.local/share/omadeb/install/desktop.sh
