@@ -1,0 +1,21 @@
+curl
+git
+unzip
+build-essential
+meson
+ninja-build
+pkg-config
+firefox-esr
+rustup bat
+tmux
+fzf
+ripgrep
+bat
+eza
+zoxide
+plocate
+apache2-utils 
+fd-find 
+btop
+
+
