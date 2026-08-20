@@ -21,18 +21,6 @@ if ! command -v node >/dev/null 2>&1; then
   npm -v # Should print "11.16.0".
 fi
 
-# RUSTUP
-if ! command -v rustup >/dev/null 2>&1; then
-  sudo apt update
-  sudo apt install -y rustup
-fi
-
-# BAT
-if ! command -v bat >/dev/null 2>&1 && ! command -v batcat >/dev/null 2>&1; then
-  sudo apt update
-  sudo apt install -y bat
-fi
-
 # EZA
 if ! command -v eza >/dev/null 2>&1; then
   sudo mkdir -p /etc/apt/keyrings
