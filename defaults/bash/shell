@@ -8,7 +8,7 @@ HISTFILESIZE="${HISTSIZE}"
 source /usr/share/bash-completion/bash_completion
 
 # Set complete path
-export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/omadeb/bin:$PATH"
-set +h
-
 export OMADEB_PATH="$HOME/.local/share/omadeb"
+export PATH="$HOME/.local/share/omadeb/bin:$HOME/.local/bin:$PATH"
+
+set +h

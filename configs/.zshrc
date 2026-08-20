@@ -11,6 +11,11 @@ fi
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Source bashrc file
+if [ -f ~/.bashrc ]; then
+  emulate sh -c 'source ~/.bashrc'
+fi
+
 # Better history
 HISTSIZE=100000
 SAVEHIST=100000
