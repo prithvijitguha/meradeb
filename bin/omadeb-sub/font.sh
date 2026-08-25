@@ -19,11 +19,6 @@ set_font() {
   fi
 
   gsettings set org.gnome.desktop.interface monospace-font-name "$font_name 10"
-
-  if [ -f "$OMADEB_PATH/configs/alacritty/fonts/$file_name.toml" ]; then
-    cp "$OMADEB_PATH/configs/alacritty/fonts/$file_name.toml" ~/.config/alacritty/font.toml
-    sed -i "s/\"editor.fontFamily\": \".*\"/\"editor.fontFamily\": \"$font_name\"/g" ~/.config/Code/User/settings.json
-  fi
 }
 
 if [ "$#" -gt 1 ]; then
