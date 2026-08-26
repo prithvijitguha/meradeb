@@ -6,4 +6,4 @@ else
   SUB=$1
 fi
 
-[ -n "$SUB" ] && [ "$SUB" != "quit" ] && source $OMADEB_PATH/bin/omadeb-sub/$SUB.sh
+[ -n "$SUB" ] && [ "$SUB" != "quit" ] && source $OMADEB_PATH/bin/meradeb-sub/$SUB.sh

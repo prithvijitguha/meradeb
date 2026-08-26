@@ -41,9 +41,9 @@ case $choice in
   set_font "MesloLGS Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.zip" "ttf"
   ;;
 "> Change size")
-  source $OMADEB_PATH/bin/omadeb-sub/font-size.sh
+  source $OMADEB_PATH/bin/meradeb-sub/font-size.sh
   exit
   ;;
 esac
 
-source $OMADEB_PATH/bin/omadeb-sub/menu.sh
+source $OMADEB_PATH/bin/meradeb-sub/menu.sh

@@ -8,7 +8,7 @@ if ! command -v fastfetch >/dev/null 2>&1; then
 fi
 
 if [ ! -f "$HOME/.config/fastfetch/config.jsonc" ]; then
-  # Use omadeb fastfetch config
+  # Use meradeb fastfetch config
   mkdir -p ~/.config/fastfetch
-  cp ~/.local/share/omadeb/configs/fastfetch.jsonc ~/.config/fastfetch/config.jsonc
+  cp ~/.local/share/meradeb/configs/fastfetch.jsonc ~/.config/fastfetch/config.jsonc
 fi

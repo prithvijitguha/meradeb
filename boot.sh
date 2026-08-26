@@ -19,13 +19,13 @@ sudo apt-get update >/dev/null
 sudo apt-get install -y git >/dev/null
 
 echo "Cloning Omadeb..."
-rm -rf ~/.local/share/omadeb
-git clone git@github.com:prithvijitguha/omadeb.git ~/.local/share/omadeb >/dev/null
+rm -rf ~/.local/share/meradeb
+git clone git@github.com:prithvijitguha/meradeb.git ~/.local/share/meradeb >/dev/null
 if [[ $OMADEB_REF != "master" ]]; then
-  cd ~/.local/share/omadeb
+  cd ~/.local/share/meradeb
   git fetch origin "${OMADEB_REF:-stable}" && git checkout "${OMADEB_REF:-stable}"
   cd -
 fi
 
 echo "Installation starting..."
-source ~/.local/share/omadeb/install.sh
+source ~/.local/share/meradeb/install.sh

@@ -22,5 +22,5 @@ else
 fi
 
 clear
-source $OMADEB_PATH/bin/omadeb-sub/header.sh
-source $OMADEB_PATH/bin/omadeb-sub/install.sh
+source $OMADEB_PATH/bin/meradeb-sub/header.sh
+source $OMADEB_PATH/bin/meradeb-sub/install.sh

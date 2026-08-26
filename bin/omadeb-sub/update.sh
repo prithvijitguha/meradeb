@@ -16,7 +16,7 @@ else
   INSTALLER=$(echo "$CHOICE" | awk -F ' {2,}' '{print $1}' | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
   case "$INSTALLER" in
-  "omadeb") INSTALLER_FILE="$OMADEB_PATH/bin/omadeb-sub/migrate.sh" ;;
+  "meradeb") INSTALLER_FILE="$OMADEB_PATH/bin/meradeb-sub/migrate.sh" ;;
   "ollama") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-ollama.sh" ;;
   *) INSTALLER_FILE="$OMADEB_PATH/install/terminal/app-$INSTALLER.sh" ;;
   esac
@@ -25,4 +25,4 @@ else
 fi
 
 clear
-source $OMADEB_PATH/bin/omadeb
+source $OMADEB_PATH/bin/meradeb

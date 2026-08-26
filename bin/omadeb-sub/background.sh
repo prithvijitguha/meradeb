@@ -11,7 +11,7 @@ fi
 
 OMADEB_THEME_BACKGROUND="$BACKGROUND"
 
-BACKGROUND_ORG_PATH="$HOME/.local/share/omadeb/themes/background/$OMADEB_THEME_BACKGROUND"
+BACKGROUND_ORG_PATH="$HOME/.local/share/meradeb/themes/background/$OMADEB_THEME_BACKGROUND"
 BACKGROUND_DEST_DIR="$HOME/.local/share/backgrounds"
 BACKGROUND_DEST_PATH="$BACKGROUND_DEST_DIR/$(echo "$OMADEB_THEME_BACKGROUND" | tr '/' '-')"
 
@@ -25,4 +25,4 @@ gsettings set org.gnome.desktop.background picture-uri "$BACKGROUND_DEST_PATH"
 gsettings set org.gnome.desktop.background picture-uri-dark "$BACKGROUND_DEST_PATH"
 gsettings set org.gnome.desktop.background picture-options 'zoom'
 
-source $OMADEB_PATH/bin/omadeb-sub/menu.sh
+source $OMADEB_PATH/bin/meradeb-sub/menu.sh

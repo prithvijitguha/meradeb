@@ -1,3 +1,3 @@
 #!/bin/bash
 
-for script in ~/.local/share/omadeb/applications/*.sh; do source $script; done
+for script in ~/.local/share/meradeb/applications/*.sh; do source $script; done

@@ -19,4 +19,4 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
   source $OMADEB_PATH/themes/$THEME/tophat.sh
 fi
 
-source $OMADEB_PATH/bin/omadeb-sub/menu.sh
+source $OMADEB_PATH/bin/meradeb-sub/menu.sh
