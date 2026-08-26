@@ -12,13 +12,13 @@ ascii_art='
 '
 
 echo -e "$ascii_art"
-echo "=> Omadeb is recommended and tested on Debian 13 installations only!"
+echo "=> Warning: Meradeb is recommeded for Debian 13 Trixie setups"
 echo -e "\nBegin installation (or abort with ctrl+c)..."
 
 sudo apt-get update >/dev/null
 sudo apt-get install -y git >/dev/null
 
-echo "Cloning Omadeb..."
+echo "Cloning Meradeb..."
 rm -rf ~/.local/share/meradeb
 git clone git@github.com:prithvijitguha/meradeb.git ~/.local/share/meradeb >/dev/null
 if [[ $MERADEB_REF != "master" ]]; then
