@@ -8,7 +8,6 @@ Comment=System information from Fastfetch
 Exec=ghostty --class=About --title=About -e bash -c 'fastfetch; read -n 1 -s'
 Terminal=false
 Type=Application
-Icon=/home/$USER/.local/share/omadeb/applications/icons/Ubuntu.png
 Categories=GTK;
 StartupNotify=false
 EOF
