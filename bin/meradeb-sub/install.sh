@@ -39,7 +39,7 @@ if [[ "$CHOICE" == "<< Back"* ]] || [[ -z "$CHOICE" ]]; then
   # Don't install anything
   echo ""
 elif [[ "$CHOICE" == "> All"* ]]; then
-  INSTALLER_FILE=$(gum file $OMADEB_PATH/install)
+  INSTALLER_FILE=$(gum file $MERADEB_PATH/install)
 
   [[ -n "$INSTALLER_FILE" ]] &&
     gum confirm "Run installer?" &&
@@ -49,23 +49,23 @@ else
   INSTALLER=$(echo "$CHOICE" | awk -F ' {2,}' '{print $1}' | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
   case "$INSTALLER" in
-  "dev-editor") INSTALLER_FILE="$OMADEB_PATH/bin/omadeb-sub/install-dev-editor.sh" ;;
-  "web-apps") INSTALLER_FILE="$OMADEB_PATH/install/desktop/optional/select-web-apps.sh" ;;
-  "dev-language") INSTALLER_FILE="$OMADEB_PATH/install/terminal/select-dev-language.sh" ;;
-  "dev-database") INSTALLER_FILE="$OMADEB_PATH/install/terminal/select-dev-storage.sh" ;;
-  "ollama") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-ollama.sh" ;;
-  "tailscale") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-tailscale.sh" ;;
-  "geekbench") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-geekbench.sh" ;;
-  "mise") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-mise.sh" ;;
-  "zellij") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-zellij.sh" ;;
-  "docker") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-docker.sh" ;;
-  "lazydocker") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-lazy-docker.sh" ;;
-  "lazygit") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-lazygit.sh" ;;
-  *) INSTALLER_FILE="$OMADEB_PATH/install/desktop/optional/app-$INSTALLER.sh" ;;
+  "dev-editor") INSTALLER_FILE="$MERADEB_PATH/bin/meradeb-sub/install-dev-editor.sh" ;;
+  "web-apps") INSTALLER_FILE="$MERADEB_PATH/install/desktop/optional/select-web-apps.sh" ;;
+  "dev-language") INSTALLER_FILE="$MERADEB_PATH/install/terminal/select-dev-language.sh" ;;
+  "dev-database") INSTALLER_FILE="$MERADEB_PATH/install/terminal/select-dev-storage.sh" ;;
+  "ollama") INSTALLER_FILE="$MERADEB_PATH/install/terminal/optional/app-ollama.sh" ;;
+  "tailscale") INSTALLER_FILE="$MERADEB_PATH/install/terminal/optional/app-tailscale.sh" ;;
+  "geekbench") INSTALLER_FILE="$MERADEB_PATH/install/terminal/optional/app-geekbench.sh" ;;
+  "mise") INSTALLER_FILE="$MERADEB_PATH/install/terminal/optional/app-mise.sh" ;;
+  "zellij") INSTALLER_FILE="$MERADEB_PATH/install/terminal/optional/app-zellij.sh" ;;
+  "docker") INSTALLER_FILE="$MERADEB_PATH/install/terminal/optional/app-docker.sh" ;;
+  "lazydocker") INSTALLER_FILE="$MERADEB_PATH/install/terminal/optional/app-lazy-docker.sh" ;;
+  "lazygit") INSTALLER_FILE="$MERADEB_PATH/install/terminal/optional/app-lazygit.sh" ;;
+  *) INSTALLER_FILE="$MERADEB_PATH/install/desktop/optional/app-$INSTALLER.sh" ;;
   esac
 
   source $INSTALLER_FILE && gum spin --spinner globe --title "Install completed!" -- sleep 3
 fi
 
 clear
-source $OMADEB_PATH/bin/omadeb
+source $MERADEB_PATH/bin/meradeb

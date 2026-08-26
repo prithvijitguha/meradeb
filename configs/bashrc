@@ -1,5 +1,0 @@
-source ~/.local/share/omadeb/defaults/bash/shell
-source ~/.local/share/omadeb/defaults/bash/aliases
-source ~/.local/share/omadeb/defaults/bash/functions
-source ~/.local/share/omadeb/defaults/bash/prompt
-source ~/.local/share/omadeb/defaults/bash/init

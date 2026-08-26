@@ -9,5 +9,5 @@ if ! command -v wofi >/dev/null 2>&1; then
   su -c "ninja -C build install"
 
   # Added tmux configs
-  cp -r ~/.local/share/omadeb/configs/wofi/ ~/.config/
+  cp -r ~/.local/share/meradeb/configs/wofi/ ~/.config/
 fi

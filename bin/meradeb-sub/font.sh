@@ -15,7 +15,7 @@ set_font() {
     fc-cache
     cd -
     clear
-    source $OMADEB_PATH/ascii.sh
+    source $MERADEB_PATH/ascii.sh
   fi
 
   gsettings set org.gnome.desktop.interface monospace-font-name "$font_name 10"
@@ -41,9 +41,9 @@ case $choice in
   set_font "MesloLGS Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.zip" "ttf"
   ;;
 "> Change size")
-  source $OMADEB_PATH/bin/omadeb-sub/font-size.sh
+  source $MERADEB_PATH/bin/meradeb-sub/font-size.sh
   exit
   ;;
 esac
 
-source $OMADEB_PATH/bin/omadeb-sub/menu.sh
+source $MERADEB_PATH/bin/meradeb-sub/menu.sh

@@ -130,6 +130,6 @@ bind '"\C-r": reverse-search-history'
 export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
 . "$HOME/.local/bin/env"
 
-# Omadebian integration
-export OMADEB_PATH="$HOME/.local/share/omadeb"
-export PATH="$HOME/.local/share/omadeb/bin:$HOME/.local/bin:$PATH"
+# Meradeb integration
+export MERADEB_PATH="$HOME/.local/share/meradeb"
+export PATH="$HOME/.local/share/meradeb/bin:$HOME/.local/bin:$PATH"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Gum is used for the omadeb commands for tailoring omadeb after the initial install
+# Gum is used for the meradeb commands for tailoring meradeb after the initial install
 if ! command -v gum >/dev/null 2>&1; then
   sudo mkdir -p /etc/apt/keyrings
   curl -fsSL https://repo.charm.sh/apt/gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/charm.gpg

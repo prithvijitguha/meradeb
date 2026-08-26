@@ -4,16 +4,14 @@
 set -e
 
 # Give people a chance to retry running the installation
-trap 'echo "Omadeb installation failed! You can retry by running: source ~/.local/share/omadeb/install.sh"' ERR
+trap 'echo "Meradeb installation failed! You can retry by running: source ~/.local/share/meradeb/install.sh"' ERR
 
 # Check the distribution name and version and abort if incompatible
-source ~/.local/share/omadeb/install/check-version.sh
+source ~/.local/share/meradeb/install/check-version.sh
 
 # Ask for app choices
 echo "Get ready to make a few choices..."
-source ~/.local/share/omadeb/install/terminal/required/app-gum.sh >/dev/null
-source ~/.local/share/omadeb/install/first-run-choices.sh
-source ~/.local/share/omadeb/install/identification.sh
+source ~/.local/share/meradeb/install/terminal/required/app-gum.sh >/dev/null
 
 # Desktop software and tweaks will only be installed if we're running Gnome
 if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
@@ -24,15 +22,15 @@ if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
   echo "Installing terminal and desktop tools..."
 
   # Install terminal tools
-  source ~/.local/share/omadeb/install/install-base-packages.sh
+  source ~/.local/share/meradeb/install/install-base-packages.sh
 
   # Install desktop tools and tweaks
-  source ~/.local/share/omadeb/install/desktop.sh
+  source ~/.local/share/meradeb/install/desktop.sh
 
   # Revert to normal idle and lock settings
   gsettings set org.gnome.desktop.screensaver lock-enabled true
   gsettings set org.gnome.desktop.session idle-delay 300
 else
   echo "Only installing terminal tools..."
-  source ~/.local/share/omadeb/install/terminal.sh
+  source ~/.local/share/meradeb/install/terminal.sh
 fi
