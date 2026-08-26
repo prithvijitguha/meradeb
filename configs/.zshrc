@@ -11,6 +11,8 @@ fi
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+
+
 # Better history
 HISTSIZE=100000
 SAVEHIST=100000
@@ -168,3 +170,10 @@ alias gits="git status"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#Source Omadebian 
+# Set complete path
+export OMADEB_PATH="$HOME/.local/share/omadeb"
+export PATH="$HOME/.local/share/omadeb/bin:$HOME/.local/bin:$PATH"
+
+
