@@ -1,4 +1,4 @@
 #!/bin/bash
 
-xdg-open "https://manual.omakub.org" &>/dev/null
+chromium --app="https://manual.omakub.org" --name=Manual --class=Manual &>/dev/null
 source $OMADEB_PATH/bin/omadeb-sub/menu.sh
