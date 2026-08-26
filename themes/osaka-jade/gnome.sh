@@ -1,5 +1,5 @@
 #!/bin/bash
 
-OMADEB_THEME_COLOR="green"
-OMADEB_THEME_BACKGROUND="osaka-jade.jpg"
-source $OMADEB_PATH/themes/set-gnome-theme.sh
+MERADEB_THEME_COLOR="green"
+MERADEB_THEME_BACKGROUND="osaka-jade.jpg"
+source $MERADEB_PATH/themes/set-gnome-theme.sh

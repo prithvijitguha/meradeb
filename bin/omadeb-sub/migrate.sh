@@ -1,10 +1,10 @@
 #!/bin/bash
 
-cd $OMADEB_PATH
+cd $MERADEB_PATH
 last_updated_at=$(git log -1 --format=%cd --date=unix)
 git pull
 
-for file in $OMADEB_PATH/migrations/*.sh; do
+for file in $MERADEB_PATH/migrations/*.sh; do
   filename=$(basename "$file")
   migrate_at="${filename%.sh}"
 

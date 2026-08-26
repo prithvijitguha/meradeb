@@ -16,13 +16,13 @@ else
   INSTALLER=$(echo "$CHOICE" | awk -F ' {2,}' '{print $1}' | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
   case "$INSTALLER" in
-  "meradeb") INSTALLER_FILE="$OMADEB_PATH/bin/meradeb-sub/migrate.sh" ;;
-  "ollama") INSTALLER_FILE="$OMADEB_PATH/install/terminal/optional/app-ollama.sh" ;;
-  *) INSTALLER_FILE="$OMADEB_PATH/install/terminal/app-$INSTALLER.sh" ;;
+  "meradeb") INSTALLER_FILE="$MERADEB_PATH/bin/meradeb-sub/migrate.sh" ;;
+  "ollama") INSTALLER_FILE="$MERADEB_PATH/install/terminal/optional/app-ollama.sh" ;;
+  *) INSTALLER_FILE="$MERADEB_PATH/install/terminal/app-$INSTALLER.sh" ;;
   esac
 
   source $INSTALLER_FILE && gum spin --spinner globe --title "Update completed!" -- sleep 3
 fi
 
 clear
-source $OMADEB_PATH/bin/meradeb
+source $MERADEB_PATH/bin/meradeb

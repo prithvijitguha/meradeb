@@ -1,5 +1,5 @@
 #!/bin/bash
 
-OMADEB_THEME_COLOR="magenta"
-OMADEB_THEME_BACKGROUND="catppuccin-custom.png"
-source $OMADEB_PATH/themes/set-gnome-theme.sh
+MERADEB_THEME_COLOR="magenta"
+MERADEB_THEME_BACKGROUND="catppuccin-custom.png"
+source $MERADEB_PATH/themes/set-gnome-theme.sh

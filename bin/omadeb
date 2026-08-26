@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source $OMADEB_PATH/bin/meradeb-sub/header.sh
-source $OMADEB_PATH/bin/meradeb-sub/menu.sh
+source $MERADEB_PATH/bin/meradeb-sub/header.sh
+source $MERADEB_PATH/bin/meradeb-sub/menu.sh

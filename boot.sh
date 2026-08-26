@@ -21,9 +21,9 @@ sudo apt-get install -y git >/dev/null
 echo "Cloning Omadeb..."
 rm -rf ~/.local/share/meradeb
 git clone git@github.com:prithvijitguha/meradeb.git ~/.local/share/meradeb >/dev/null
-if [[ $OMADEB_REF != "master" ]]; then
+if [[ $MERADEB_REF != "master" ]]; then
   cd ~/.local/share/meradeb
-  git fetch origin "${OMADEB_REF:-stable}" && git checkout "${OMADEB_REF:-stable}"
+  git fetch origin "${MERADEB_REF:-stable}" && git checkout "${MERADEB_REF:-stable}"
   cd -
 fi
 

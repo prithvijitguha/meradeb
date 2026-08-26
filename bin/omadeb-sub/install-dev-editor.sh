@@ -16,11 +16,11 @@ if [[ "$CHOICE" == "<< Back"* ]] || [[ -z "$CHOICE" ]]; then
   echo ""
 else
   INSTALLER=$(echo "$CHOICE" | awk -F ' {2,}' '{print $1}' | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
-  INSTALLER_FILE="$OMADEB_PATH/install/desktop/optional/app-$INSTALLER.sh"
+  INSTALLER_FILE="$MERADEB_PATH/install/desktop/optional/app-$INSTALLER.sh"
 
   source $INSTALLER_FILE && gum spin --spinner globe --title "Install completed!" -- sleep 3
 fi
 
 clear
-source $OMADEB_PATH/bin/meradeb-sub/header.sh
-source $OMADEB_PATH/bin/meradeb-sub/install.sh
+source $MERADEB_PATH/bin/meradeb-sub/header.sh
+source $MERADEB_PATH/bin/meradeb-sub/install.sh
