@@ -15,8 +15,6 @@ echo -e "$ascii_art"
 echo "=> Warning: Meradeb is recommeded for Debian 13 Trixie setups"
 echo -e "\nBegin installation (or abort with ctrl+c)..."
 
-sudo apt update && sudo apt install git
-
 echo "Cloning Meradeb..."
 rm -rf ~/.local/share/meradeb
 git clone git@github.com:prithvijitguha/meradeb.git ~/.local/share/meradeb >/dev/null
