@@ -20,7 +20,7 @@ sudo cp ~/.local/share/gnome-shell/extensions/just-perfection-desktop@just-perfe
 sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml \
   /usr/share/glib-2.0/schemas/
 
-sudo cp ~/.local/share/gnome-shell/extensions/space-bar@luchrioh/schemas/org.gnome.shell.extensions.space-bar.gschema.xml \
+sudo cp ~/.local/share/gnome-shell/extensions/workspace-indicator@gnome-shell-extensions.gcampax.github.com/schemas/org.gnome.shell.extensions.workspace-indicator.gschema.xml \
   /usr/share/glib-2.0/schemas/
 
 sudo cp ~/.local/share/gnome-shell/extensions/system-monitor@gnome-shell-extensions.gcampax.github.com/schemas/org.gnome.shell.extensions.system-monitor.gschema.xml \
