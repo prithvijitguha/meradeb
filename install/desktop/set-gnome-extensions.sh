@@ -8,7 +8,6 @@ yes | gext install just-perfection-desktop@just-perfection
 yes | gext install blur-my-shell@aunetx
 yes | gext install space-bar@luchrioh
 yes | gext install system-monitor@gnome-shell-extensions.gcampax.github.com
-yes | gext install undecorate@sun.wxg@gmail.com
 yes | gext install auto-move-windows@gnome-shell-extensions.gcampax.github.com
 
 # Compile gsettings schemas
@@ -22,6 +21,9 @@ sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.g
   /usr/share/glib-2.0/schemas/
 
 sudo cp ~/.local/share/gnome-shell/extensions/space-bar@luchrioh/schemas/org.gnome.shell.extensions.space-bar.gschema.xml \
+  /usr/share/glib-2.0/schemas/
+
+sudo cp ~/.local/share/gnome-shell/extensions/system-monitor@gnome-shell-extensions.gcampax.github.com/schemas/org.gnome.shell.extensions.system-monitor.gschema.xml \
   /usr/share/glib-2.0/schemas/
 
 sudo cp ~/.local/share/gnome-shell/extensions/auto-move-windows@gnome-shell-extensions.gcampax.github.com/schemas/org.gnome.shell.extensions.auto-move-windows.gschema.xml \
