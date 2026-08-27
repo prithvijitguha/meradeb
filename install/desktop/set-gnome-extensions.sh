@@ -61,10 +61,10 @@ gsettings set org.gnome.shell.extensions.blur-my-shell.dash-to-dock static-blur 
 gsettings set org.gnome.shell.extensions.blur-my-shell.dash-to-dock style-dash-to-dock 0
 
 # Configure Space Bar
-gsettings set org.gnome.shell.extensions.space-bar.behavior smart-workspace-names false
-gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-activate-workspace-shortcuts false
-gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-move-to-workspace-shortcuts true
-gsettings set org.gnome.shell.extensions.space-bar.shortcuts open-menu "@as []"
+# gsettings set org.gnome.shell.extensions.space-bar.behavior smart-workspace-names false
+# gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-activate-workspace-shortcuts false
+# gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-move-to-workspace-shortcuts true
+# gsettings set org.gnome.shell.extensions.space-bar.shortcuts open-menu "@as []"
 
 gsettings set org.gnome.shell.extensions.workspace-indicator embed-previews false
 
