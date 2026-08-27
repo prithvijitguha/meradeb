@@ -6,7 +6,7 @@ pipx install gnome-extensions-cli --system-site-packages
 yes | gext install tactile@lundal.io
 yes | gext install just-perfection-desktop@just-perfection
 yes | gext install blur-my-shell@aunetx
-yes | gext install space-bar@luchrioh
+yes | gext install workspace-indicator@gnome-shell-extensions.gcampax.github.com
 yes | gext install system-monitor@gnome-shell-extensions.gcampax.github.com
 yes | gext install auto-move-windows@gnome-shell-extensions.gcampax.github.com
 
@@ -65,6 +65,8 @@ gsettings set org.gnome.shell.extensions.space-bar.behavior smart-workspace-name
 gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-activate-workspace-shortcuts false
 gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-move-to-workspace-shortcuts true
 gsettings set org.gnome.shell.extensions.space-bar.shortcuts open-menu "@as []"
+
+gsettings set org.gnome.shell.extensions.workspace-indicator embed-previews false
 
 # Enable the system-monitor
 gnome-extensions enable system-monitor@gnome-shell-extensions.gcampax.github.com
