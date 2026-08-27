@@ -10,6 +10,7 @@ gsettings set org.gnome.desktop.interface monospace-font-name 'CaskaydiaMono Ner
 gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
 
 # System monitor
-gsettings set org.gnome.shell.extensions.system-monitor cpu-display true
-gsettings set org.gnome.shell.extensions.system-monitor memory-display true
-gsettings set org.gnome.shell.extensions.system-monitor gpu-display true
+gsettings set org.gnome.shell.extensions.system-monitor show-cpu true
+gsettings set org.gnome.shell.extensions.system-monitor show-download true
+gsettings set org.gnome.shell.extensions.system-monitor show-upload true
+gsettings set org.gnome.shell.extensions.system-monitor show-memory true
