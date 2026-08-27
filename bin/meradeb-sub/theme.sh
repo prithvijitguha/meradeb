@@ -8,15 +8,7 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
     cp $MERADEB_PATH/themes/$THEME/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
   fi
 
-  if [ -f "$MERADEB_PATH/themes/$THEME/btop.theme" ]; then
-    cp $MERADEB_PATH/themes/$THEME/btop.theme ~/.config/btop/themes/$THEME.theme
-    sed -i "s/color_theme = \".*\"/color_theme = \"$THEME\"/g" ~/.config/btop/btop.conf
-  else
-    sed -i "s/color_theme = \".*\"/color_theme = \"Default\"/g" ~/.config/btop/btop.conf
-  fi
-
   source $MERADEB_PATH/themes/$THEME/gnome.sh
-  source $MERADEB_PATH/themes/$THEME/tophat.sh
 fi
 
 source $MERADEB_PATH/bin/meradeb-sub/menu.sh
