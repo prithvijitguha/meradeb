@@ -10,7 +10,7 @@ trap 'echo "Meradeb installation failed! You can retry by running: source ~/.loc
 source ~/.local/share/meradeb/install/check-version.sh
 
 # Ask for app choices
-echo "Get ready to make a few choices..."
+echo "Install requires confirmation for gnome extensions please click install"
 source ~/.local/share/meradeb/install/terminal/required/app-gum.sh >/dev/null
 
 # Desktop software and tweaks will only be installed if we're running Gnome
