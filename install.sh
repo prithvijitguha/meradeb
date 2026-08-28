@@ -20,8 +20,6 @@ MODE=$(gum choose \
 
 case "$MODE" in
 default)
-  echo "Installing default packages..."
-  echo "Installing terminal and desktop tools..."
   # Install terminal tools
   source ~/.local/share/meradeb/install/install-base-packages.sh
   # Install desktop tools and tweaks
@@ -40,20 +38,15 @@ advanced)
   while IFS= read -r OPTION; do
     case "$OPTION" in
     "GNOME Extensions and Settings")
-      echo "Installing GNOME extensions and settings..."
       source ~/.local/share/meradeb/install/desktop/install-gnome-packages-settings.sh
       ;;
     "Terminal Packages")
-      echo "Installing terminal packages..."
       source ~/.local/share/meradeb/install/terminal/install-all-terminal-packages.sh
       ;;
     "Desktop Packages")
-      echo "Installing desktop packages..."
-      # Desktop package installation commands
       source ~/.local/share/meradeb/install/desktop/install-other-packages.sh
       ;;
     "Applications")
-      echo "Installing applications..."
       source ~/.local/share/meradeb/install/install-applications.sh
       ;;
     esac
