@@ -56,7 +56,6 @@ advanced)
       echo "Installing terminal packages..."
       source ~/.local/share/meradeb/install/terminal/install-all-terminal-packages.sh 
 
-
     "Desktop Packages")
       echo "Installing desktop packages..."
       # Desktop package installation commands
