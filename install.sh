@@ -34,7 +34,7 @@ default)
   # Revert to normal idle and lock settings
   gsettings set org.gnome.desktop.screensaver lock-enabled true
   gsettings set org.gnome.desktop.session idle-delay 300
-
+  ;; 
 advanced)
   OPTIONS=$(gum choose \
     "GNOME Extensions and Settings" \
@@ -50,8 +50,7 @@ advanced)
     "GNOME Extensions and Settings")
       echo "Installing GNOME extensions and settings..."
       source ~/.local/share/meradeb/install/desktop/install-gnome-packages-settings.sh 
-
-
+      ;; 
     "Terminal Packages")
       echo "Installing terminal packages..."
       source ~/.local/share/meradeb/install/terminal/install-all-terminal-packages.sh 
@@ -60,10 +59,11 @@ advanced)
       echo "Installing desktop packages..."
       # Desktop package installation commands
       source ~/.local/share/meradeb/install/desktop/install-other-packages.sh 
-
+      ;; 
     "Applications")
       echo "Installing applications..."
       source ~/.local/share/meradeb/install/install-applications.sh 
+      ;; 
     esac
   done <<<"$OPTIONS"
   ;;
