@@ -1,6 +1,6 @@
 # Meradeb
 
-Meradeb(MAY-rah or meh-rah) it translated to "MY" and is taken from the Hindi word 'mera'. Its meant to signify a customization of Debian for
+Meradeb(MAY-rah or meh-rah) it translates to "MY" and is taken from the Hindi word 'mera'. Its meant to signify a customization of Debian for
 myself and through my vision.
 
 This repo was forked from the Omakub repo, I discovered Omarchy and Omakub before I discovered who DHH was. [the-dhh-problem](https://davidcel.is/articles/the-dhh-problem). I mainly work with Python and hardly ever heard of anything with Ruby or Rails.
