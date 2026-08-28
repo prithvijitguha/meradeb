@@ -30,7 +30,7 @@ advanced)
     "GNOME Extensions and Settings" \
     "Terminal Packages" \
     "Desktop Packages" \
-    "Applications Only" \
+    "Applications" \
     --no-limit \
     --height 8 \
     --header "Select Components to Install")
