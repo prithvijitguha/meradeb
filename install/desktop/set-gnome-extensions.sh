@@ -7,9 +7,7 @@ yes | gext install tactile@lundal.io
 yes | gext install just-perfection-desktop@just-perfection
 yes | gext install blur-my-shell@aunetx
 yes | gext install space-bar@luchrioh
-yes | gext install undecorate@sun.wxg@gmail.com
 yes | gext install tophat@fflewddur.github.io
-yes | gext install AlphabeticalAppGrid@stuarthayhurst
 yes | gext install auto-move-windows@gnome-shell-extensions.gcampax.github.com
 
 # Compile gsettings schemas
@@ -26,9 +24,6 @@ sudo cp ~/.local/share/gnome-shell/extensions/space-bar@luchrioh/schemas/org.gno
   /usr/share/glib-2.0/schemas/
 
 sudo cp ~/.local/share/gnome-shell/extensions/tophat@fflewddur.github.io/schemas/org.gnome.shell.extensions.tophat.gschema.xml \
-  /usr/share/glib-2.0/schemas/
-
-sudo cp ~/.local/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst/schemas/org.gnome.shell.extensions.AlphabeticalAppGrid.gschema.xml \
   /usr/share/glib-2.0/schemas/
 
 sudo cp ~/.local/share/gnome-shell/extensions/auto-move-windows@gnome-shell-extensions.gcampax.github.com/schemas/org.gnome.shell.extensions.auto-move-windows.gschema.xml \
@@ -78,6 +73,3 @@ gsettings set org.gnome.shell.extensions.tophat show-disk false
 gsettings set org.gnome.shell.extensions.tophat show-mem true
 gsettings set org.gnome.shell.extensions.tophat show-fs true
 gsettings set org.gnome.shell.extensions.tophat network-usage-unit bits
-
-# Configure AlphabeticalAppGrid
-gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-position 'end'

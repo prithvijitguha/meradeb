@@ -9,28 +9,48 @@ trap 'echo "Meradeb installation failed! You can retry by running: source ~/.loc
 # Check the distribution name and version and abort if incompatible
 source ~/.local/share/meradeb/install/check-version.sh
 
-# Ask for app choices
-echo "Get ready to make a few choices..."
 source ~/.local/share/meradeb/install/terminal/required/app-gum.sh >/dev/null
 
-# Desktop software and tweaks will only be installed if we're running Gnome
-if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
-  # Ensure computer doesn't go to sleep or lock while installing
-  gsettings set org.gnome.desktop.screensaver lock-enabled false
-  gsettings set org.gnome.desktop.session idle-delay 0
+MODE=$(gum choose \
+  "Default" \
+  "Advanced" \
+  --height 5 \
+  --header "Installation Mode" |
+  tr '[:upper:]' '[:lower:]')
 
-  echo "Installing terminal and desktop tools..."
+case "$MODE" in
+default)
+  source ~/.local/share/meradeb/install/desktop/install-gnome-packages-settings.sh
+  source ~/.local/share/meradeb/install/terminal/install-all-terminal-packages.sh
+  source ~/.local/share/meradeb/install/desktop/install-other-packages.sh
+  source ~/.local/share/meradeb/install/install-applications.sh
+  ;;
+advanced)
+  OPTIONS=$(gum choose \
+    "GNOME Extensions and Settings" \
+    "Terminal Packages" \
+    "Desktop Packages" \
+    "Applications" \
+    --no-limit \
+    --height 8 \
+    --header "Select Components to Install")
 
-  # Install terminal tools
-  source ~/.local/share/meradeb/install/install-base-packages.sh
-
-  # Install desktop tools and tweaks
-  source ~/.local/share/meradeb/install/desktop.sh
-
-  # Revert to normal idle and lock settings
-  gsettings set org.gnome.desktop.screensaver lock-enabled true
-  gsettings set org.gnome.desktop.session idle-delay 300
-else
-  echo "Only installing terminal tools..."
-  source ~/.local/share/meradeb/install/terminal.sh
-fi
+  while IFS= read -r OPTION; do
+    case "$OPTION" in
+    "GNOME Extensions and Settings")
+      source ~/.local/share/meradeb/install/desktop/install-gnome-packages-settings.sh
+      ;;
+    "Terminal Packages")
+      source ~/.local/share/meradeb/install/terminal/install-all-terminal-packages.sh
+      ;;
+    "Desktop Packages")
+      source ~/.local/share/meradeb/install/desktop/install-other-packages.sh
+      ;;
+    "Applications")
+      source ~/.local/share/meradeb/install/install-applications.sh
+      ;;
+    esac
+  done <<<"$OPTIONS"
+  ;;
+esac
+echo "Installation completed!"
