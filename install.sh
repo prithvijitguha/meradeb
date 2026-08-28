@@ -20,10 +20,10 @@ MODE=$(gum choose \
 
 case "$MODE" in
 default)
-  # Install terminal tools
-  source ~/.local/share/meradeb/install/install-base-packages.sh
-  # Install desktop tools and tweaks
-  source ~/.local/share/meradeb/install/desktop.sh
+  source ~/.local/share/meradeb/install/desktop/install-gnome-packages-settings.sh
+  source ~/.local/share/meradeb/install/terminal/install-all-terminal-packages.sh
+  source ~/.local/share/meradeb/install/desktop/install-other-packages.sh
+  source ~/.local/share/meradeb/install/install-applications.sh
   ;;
 advanced)
   OPTIONS=$(gum choose \
