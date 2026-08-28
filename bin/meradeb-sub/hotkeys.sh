@@ -45,13 +45,7 @@ while true; do
   printf '  └───────────────────────────────────────────────────────────┘\n'
   printf '\n'
 
-  choice=$(gum choose \
-    "Go back")
-
-  case "$choice" in
-  "Go back")
-    source "$menu_script"
-    break
-    ;;
-  esac
+  gum choose "Go back" >/dev/null
+  source $MERADEB_PATH/bin/meradeb-sub/menu.sh
+  break
 done
