@@ -11,6 +11,12 @@ run natively on Debian which is far superior in every conceivable way.
 He had significant bloat, pre installations with a lot of 'vibe coded' sloppy scripts. He has also used some web development inspired 'migrations'
 which didn't really seem sensible to me. Overall it seemed like someone who just discovered linux and is showing off his new configurations and seeing what it can do. For more I highly recommend this blog. [a-word-on-omarchy](https://マリウス.com/a-word-on-omarchy/) (Site and insights are very legit)
 
+## Screenshots
+
+![Desktop](./docs/static/meradeb.png)
+![Desktop](./docs/static/meradeb_2.png)
+![Desktop](./docs/static/meradeb_3.png)
+
 ## Installations to run
 
 Note: Meradeb requires non free debian packages to be present for this to work
