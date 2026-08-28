@@ -43,6 +43,6 @@ echo '  │  Shift + Play       Next track                            │\n'
 echo '  └───────────────────────────────────────────────────────────┘\n'
 echo ''
 
-gum choose "← Go back" --header "" >/dev/null
+gum choose "← Go back" --header ""
 
 source $MERADEB_PATH/bin/meradeb-sub/menu.sh
