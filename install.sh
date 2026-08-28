@@ -21,19 +21,11 @@ MODE=$(gum choose \
 case "$MODE" in
 default)
   echo "Installing default packages..."
-  # Default installation commands here
-  # Desktop software and tweaks will only be installed if we're running Gnome
-  # Ensure computer doesn't go to sleep or lock while installing
-  gsettings set org.gnome.desktop.screensaver lock-enabled false
-  gsettings set org.gnome.desktop.session idle-delay 0
   echo "Installing terminal and desktop tools..."
   # Install terminal tools
   source ~/.local/share/meradeb/install/install-base-packages.sh
   # Install desktop tools and tweaks
   source ~/.local/share/meradeb/install/desktop.sh
-  # Revert to normal idle and lock settings
-  gsettings set org.gnome.desktop.screensaver lock-enabled true
-  gsettings set org.gnome.desktop.session idle-delay 300
   ;; 
 advanced)
   OPTIONS=$(gum choose \
