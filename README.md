@@ -23,9 +23,11 @@ curl -fsSL https://raw.githubusercontent.com/prithvijitguha/meradeb/main/boot.sh
 
 - Zellij -> Tmux
 - Alacritty -> Ghostty
+- Ulauncher -> Wofi
 - Kept original hotkeys for apps as much as possible
 - Added more themes
-- Improvements on menu, installation components and organized scripts a lot better
+- Improvements on menu, installation components and organized scripts. 
+- Added improvements with gnome auto move windows and workspace naming. 
 - Removed some gnome extensions and settings from omakub
 - Removed migrations and bloated applications
 
