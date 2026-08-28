@@ -1,4 +1,10 @@
 #!/bin/bash
 
 echo "Installing all applications"
-for script in ~/.local/share/meradeb/applications/*.sh; do source $script; done
+echo "$(ls ~/.local/share/meradeb/applications/*.sh)"
+source ~/.local/share/meradeb/applications/About.sh
+source ~/.local/share/meradeb/applications/Activity.sh
+source ~/.local/share/meradeb/applications/Meradeb.sh
+source ~/.local/share/meradeb/applications/Neovim.sh
+source ~/.local/share/meradeb/applications/WhatsApp.sh
+source ~/.local/share/meradeb/applications/YouTube-Music.sh
