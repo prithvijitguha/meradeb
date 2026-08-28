@@ -46,14 +46,9 @@ while true; do
   printf '\n'
 
   choice=$(gum choose \
-    --header "What would you like to do?" \
-    "Stay here" \
     "Go back")
 
   case "$choice" in
-  "Stay here")
-    continue
-    ;;
   "Go back")
     source "$menu_script"
     break
