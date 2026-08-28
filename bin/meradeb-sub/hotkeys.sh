@@ -1,51 +1,48 @@
 #!/bin/bash
 
-while true; do
-  clear
+source $MERADEB_PATH/bin/meradeb-sub/header.sh
+echo '\n'
+echo '  ╭────────────────────────────────────────────────────────────╮\n'
+echo '  │                     OMADEBIAN HOTKEYS                      │\n'
+echo '  ╰────────────────────────────────────────────────────────────╯\n'
+echo '\n'
 
-  printf '\n'
-  printf '  ╭────────────────────────────────────────────────────────────╮\n'
-  printf '  │                     MERADEB HOTKEYS                        │\n'
-  printf '  ╰────────────────────────────────────────────────────────────╯\n'
-  printf '\n'
+echo '  ┌─ WINDOW MANAGEMENT ───────────────────────────────────────┐\n'
+echo '  │  Super + W          Close window                          │\n'
+echo '  │  Super + ↑          Maximize window                       │\n'
+echo '  │  Super + Backspace  Resize window                         │\n'
+echo '  │  Shift + F11        Fullscreen                            │\n'
+echo '  └───────────────────────────────────────────────────────────┘\n'
+echo '\n'
 
-  printf '  ┌─ WINDOW MANAGEMENT ───────────────────────────────────────┐\n'
-  printf '  │  Super + W          Close window                          │\n'
-  printf '  │  Super + ↑          Maximize window                       │\n'
-  printf '  │  Super + Backspace  Resize window                         │\n'
-  printf '  │  Shift + F11        Fullscreen                            │\n'
-  printf '  └───────────────────────────────────────────────────────────┘\n'
-  printf '\n'
+echo '  ┌─ APPLICATIONS ────────────────────────────────────────────┐\n'
+echo '  │  Super + Space      Wofi launcher                         │\n'
+echo '  │  Ctrl + Print       Flameshot screenshot                  │\n'
+echo '  │  Shift + Alt + 1    New Ghostty window                    │\n'
+echo '  │  Shift + Alt + 2    New Firefox window                    │\n'
+echo '  └───────────────────────────────────────────────────────────┘\n'
+echo '\n'
 
-  printf '  ┌─ APPLICATIONS ────────────────────────────────────────────┐\n'
-  printf '  │  Super + Space      Wofi launcher                         │\n'
-  printf '  │  Ctrl + Print       Flameshot screenshot                  │\n'
-  printf '  │  Shift + Alt + 1    New Ghostty window                    │\n'
-  printf '  │  Shift + Alt + 2    New Firefox window                    │\n'
-  printf '  └───────────────────────────────────────────────────────────┘\n'
-  printf '\n'
+echo '  ┌─ WORKSPACES ──────────────────────────────────────────────┐\n'
+echo '  │  Alt + 1            Workspace 1                           │\n'
+echo '  │  Alt + 2            Workspace 2                           │\n'
+echo '  │  Alt + 3            Workspace 3                           │\n'
+echo '  │  Alt + 4            Workspace 4                           │\n'
+echo '  │  Alt + 5            Workspace 5                           │\n'
+echo '  │  Alt + 6            Workspace 6                           │\n'
+echo '  └───────────────────────────────────────────────────────────┘\n'
+echo '\n'
 
-  printf '  ┌─ WORKSPACES ──────────────────────────────────────────────┐\n'
-  printf '  │  Alt + 1            Workspace 1                           │\n'
-  printf '  │  Alt + 2            Workspace 2                           │\n'
-  printf '  │  Alt + 3            Workspace 3                           │\n'
-  printf '  │  Alt + 4            Workspace 4                           │\n'
-  printf '  │  Alt + 5            Workspace 5                           │\n'
-  printf '  │  Alt + 6            Workspace 6                           │\n'
-  printf '  └───────────────────────────────────────────────────────────┘\n'
-  printf '\n'
+echo '  ┌─ PINNED APPLICATIONS ─────────────────────────────────────┐\n'
+echo '  │  Super + 1 → 9      Launch / switch to pinned app         │\n'
+echo '  └───────────────────────────────────────────────────────────┘\n'
+echo '\n'
 
-  printf '  ┌─ PINNED APPLICATIONS ─────────────────────────────────────┐\n'
-  printf '  │  Super + 1 → 9      Launch / switch to pinned app         │\n'
-  printf '  └───────────────────────────────────────────────────────────┘\n'
-  printf '\n'
+echo '  ┌─ MEDIA ───────────────────────────────────────────────────┐\n'
+echo '  │  Shift + Play       Next track                            │\n'
+echo '  └───────────────────────────────────────────────────────────┘\n'
+echo '\n'
 
-  printf '  ┌─ MEDIA ───────────────────────────────────────────────────┐\n'
-  printf '  │  Shift + Play       Next track                            │\n'
-  printf '  └───────────────────────────────────────────────────────────┘\n'
-  printf '\n'
+gum choose "← Go back" --header "" >/dev/null
 
-  gum choose "Go back" >/dev/null
-  source $MERADEB_PATH/bin/meradeb-sub/menu.sh
-  break
-done
+source $MERADEB_PATH/bin/meradeb-sub/menu.sh
