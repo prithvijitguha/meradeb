@@ -44,5 +44,5 @@ echo '  └───────────────────────
 echo ''
 
 gum choose "← Go back" --header ""
-
+clear
 source $MERADEB_PATH/bin/meradeb-sub/menu.sh
