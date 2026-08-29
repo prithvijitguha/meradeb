@@ -22,7 +22,7 @@ gsettings set org.gnome.desktop.wm.preferences num-workspaces 6
 # Disable the hotkeys in the Dash to Dock extension (most likely culprit)
 gsettings set org.gnome.shell.extensions.dash-to-dock hot-keys false
 
-# Use alt for pinned apps
+# Use Super for pinned apps
 gsettings set org.gnome.shell.keybindings switch-to-application-1 "['<Super>1']"
 gsettings set org.gnome.shell.keybindings switch-to-application-2 "['<Super>2']"
 gsettings set org.gnome.shell.keybindings switch-to-application-3 "['<Super>3']"
@@ -40,6 +40,12 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Alt>3']
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Alt>4']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Alt>5']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Alt>6']"
+
+# Vim Navigation between windows
+gsettings set org.gnome.shell.extensions.tiling-assistant focus-window-left "['<Control>h']"
+gsettings set org.gnome.shell.extensions.tiling-assistant focus-window-right "['<Control>l']"
+gsettings set org.gnome.shell.extensions.tiling-assistant focus-window-up "['<Control>k']"
+gsettings set org.gnome.shell.extensions.tiling-assistant focus-window-down "['<Control>j']"
 
 # Reserve slots for custom keybindings
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/']"
