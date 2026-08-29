@@ -42,10 +42,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Alt>5']
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Alt>6']"
 
 # Vim Navigation between windows
-gsettings set org.gnome.shell.extensions.tilingshell focus-window-left "['<Control><Shift>h']"
-gsettings set org.gnome.shell.extensions.tilingshell focus-window-right "['<Control><Shift>l']"
-gsettings set org.gnome.shell.extensions.tilingshell focus-window-up "['<Control><Shift>k']"
-gsettings set org.gnome.shell.extensions.tilingshell focus-window-down "['<Control><Shift>j']"
+gsettings set org.gnome.shell.extensions.tilingshell focus-window-left "['<Alt><Shift>h']"
+gsettings set org.gnome.shell.extensions.tilingshell focus-window-right "['<Alt><Shift>l']"
+gsettings set org.gnome.shell.extensions.tilingshell focus-window-up "['<Alt><Shift>k']"
+gsettings set org.gnome.shell.extensions.tilingshell focus-window-down "['<Alt><Shift>j']"
 
 # Reserve slots for custom keybindings
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/']"
