@@ -47,6 +47,12 @@ gsettings set org.gnome.shell.extensions.tilingshell focus-window-right "['<Supe
 gsettings set org.gnome.shell.extensions.tilingshell focus-window-up "['<Super><Shift>k']"
 gsettings set org.gnome.shell.extensions.tilingshell focus-window-down "['<Super><Shift>j']"
 
+# Focus window for gnome
+gsettings set org.gnome.shell.extensions.tilingshell highlight-current-window "['true']"
+gsettings set org.gnome.shell.extensions.tilingshell enable-window-border true
+gsettings set org.gnome.shell.extensions.tilingshell window-use-custom-border-color true
+gsettings set org.gnome.shell.extensions.tilingshell window-border-width 3
+
 # Reserve slots for custom keybindings
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/']"
 
