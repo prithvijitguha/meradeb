@@ -1,2 +1,15 @@
 # Python local testing 
 .venv
+
+# Sphinx build output directory
+_build/
+build/
+docs/_build/
+doc/_build/
+
+# Sphinx-autobuild cache
+.sphinx-autobuild/
+
+# Doctrees cache files
+.doctrees/
+
