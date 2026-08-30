@@ -3,7 +3,7 @@
 source $MERADEB_PATH/bin/meradeb-sub/header.sh
 echo ''
 echo '  ╭────────────────────────────────────────────────────────────╮\n'
-echo '  │                     OMADEBIAN HOTKEYS                      │\n'
+echo '  │                     MERADEB HOTKEYS                      │\n'
 echo '  ╰────────────────────────────────────────────────────────────╯\n'
 echo ''
 
