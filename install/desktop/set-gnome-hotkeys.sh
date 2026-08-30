@@ -5,6 +5,7 @@ gsettings set org.gnome.desktop.wm.keybindings close "['<Super>w']"
 
 # Make it easy to maximize like you can fill left/right
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
+gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>h']"
 
 # Make it easy to resize undecorated windows
 gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Super>BackSpace']"
