@@ -13,7 +13,7 @@ source ~/.local/share/meradeb/install/terminal/required/app-gum.sh >/dev/null
 
 MODE=$(gum choose \
   "Default" \
-  "Advanced" \
+  "Advanced (Install individual components)" \
   --height 5 \
   --header "Installation Mode" |
   tr '[:upper:]' '[:lower:]')
@@ -25,7 +25,7 @@ default)
   source ~/.local/share/meradeb/install/desktop/install-other-packages.sh
   source ~/.local/share/meradeb/install/install-applications.sh
   ;;
-advanced)
+advanced (install individual components))
   OPTIONS=$(gum choose \
     "GNOME Extensions and Settings" \
     "Terminal Packages" \
