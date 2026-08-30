@@ -18,6 +18,8 @@ MODE=$(gum choose \
   --header "Installation Mode" |
   tr '[:upper:]' '[:lower:]')
 
+echo $MODE
+
 case "$MODE" in
 "Default")
   source ~/.local/share/meradeb/install/desktop/install-gnome-packages-settings.sh
