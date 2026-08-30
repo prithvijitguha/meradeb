@@ -53,4 +53,5 @@ case "$MODE" in
   done <<<"$OPTIONS"
   ;;
 esac
+source $MERADEB_PATH/bin/meradeb-sub/header.sh
 echo "Installation completed!"

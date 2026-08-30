@@ -57,4 +57,5 @@ gum choose "← Go back" --header ""
 
 clear
 
+source $MERADEB_PATH/bin/meradeb-sub/header.sh
 source $MERADEB_PATH/bin/meradeb-sub/menu.sh
