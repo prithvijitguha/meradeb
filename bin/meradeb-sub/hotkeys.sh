@@ -48,11 +48,6 @@ echo '  │  Super + 1 → 9      Launch / switch to pinned app         │'
 echo '  └───────────────────────────────────────────────────────────┘'
 echo ''
 
-echo '  ┌─ MEDIA ───────────────────────────────────────────────────┐'
-echo '  │  Shift + Play       Next track                            │'
-echo '  └───────────────────────────────────────────────────────────┘'
-echo ''
-
 gum choose "← Go back" --header ""
 
 clear

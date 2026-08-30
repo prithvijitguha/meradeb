@@ -7,12 +7,6 @@ gsettings set org.gnome.desktop.wm.keybindings close "['<Super>w']"
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>h']"
 
-# Make it easy to resize undecorated windows
-gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Super>BackSpace']"
-
-# For keyboards that only have a start/stop button for music, like Logitech MX Keys Mini
-gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Shift>AudioPlay']"
-
 # Full-screen with title/navigation bar
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Shift>F11']"
 
@@ -54,10 +48,7 @@ gsettings set org.gnome.shell.extensions.tilingshell enable-window-border true
 gsettings set org.gnome.shell.extensions.tilingshell window-use-custom-border-color true
 gsettings set org.gnome.shell.extensions.tilingshell window-border-width 3
 
-# Reserve slots for custom keybindings
-gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/']"
-
-# Set ulauncher to Super+Space
+# Set Wofi to Super+Space
 gsettings set org.gnome.desktop.wm.keybindings switch-input-source "@as []"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'wofi'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'sh -c wofi'
