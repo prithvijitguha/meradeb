@@ -19,13 +19,13 @@ MODE=$(gum choose \
   tr '[:upper:]' '[:lower:]')
 
 case "$MODE" in
-default)
+"Default")
   source ~/.local/share/meradeb/install/desktop/install-gnome-packages-settings.sh
   source ~/.local/share/meradeb/install/terminal/install-all-terminal-packages.sh
   source ~/.local/share/meradeb/install/desktop/install-other-packages.sh
   source ~/.local/share/meradeb/install/install-applications.sh
   ;;
-advanced (install individual components))
+"Advanced (Install individual components)")
   OPTIONS=$(gum choose \
     "GNOME Extensions and Settings" \
     "Terminal Packages" \
