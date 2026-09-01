@@ -12,4 +12,5 @@ Icon=/home/$USER/.local/share/meradeb/applications/icons/WhatsApp.png
 Categories=GTK;
 MimeType=text/html;text/xml;application/xhtml_xml;
 StartupNotify=true
+StartupWMClass=chromium
 EOF
