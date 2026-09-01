@@ -28,6 +28,5 @@ gsettings set org.gnome.shell.extensions.auto-move-windows application-list \
 'com.stremio.Stremio.desktop:4',
 'chromium-music.youtube.com__-Default.desktop:4'
 'Signal.desktop:5',
-'WhatsApp.desktop:5'
 'chrome-web.whatsapp.com__-Default.desktop:5'
 ]"
