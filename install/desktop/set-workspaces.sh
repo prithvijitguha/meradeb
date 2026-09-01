@@ -28,5 +28,5 @@ gsettings set org.gnome.shell.extensions.auto-move-windows application-list \
 'com.stremio.Stremio.desktop:4',
 'Youtube-music.desktop:4',
 'Signal.desktop:5',
-'Whatsapp.desktop:5'
+'WhatsApp.desktop:5'
 ]"
