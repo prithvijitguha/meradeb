@@ -1,5 +1,6 @@
 site_name: Meradeb
-site_dir: docs/build/html
+docs_dir: docs/source/
+site_dir: docs/build/
 nav:
   - Home: index.md
   - About Meradeb: about_meradeb.md
