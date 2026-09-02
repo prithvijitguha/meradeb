@@ -6,5 +6,4 @@ else
   SUB=$1
 fi
 
-source $MERADEB_PATH/bin/meradeb-sub/header.sh
 [ -n "$SUB" ] && [ "$SUB" != "quit" ] && source $MERADEB_PATH/bin/meradeb-sub/$SUB.sh
