@@ -1,5 +1,3 @@
-# Meradeb documentation
-
 <h1>
   <img src="https://www.debian.org/logos/openlogo-nd.svg" width="32" style="vertical-align: middle;">
   Meradeb
