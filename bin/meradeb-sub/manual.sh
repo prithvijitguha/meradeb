@@ -12,4 +12,13 @@ chromium \
   --class=Manual \
   &>/dev/null &
 
+# Get the manual PID
+CHROMIUM_PID=$!
+# Wait while it runs in background
+wait "$CHROMIUM_PID"
+
+# Kill it once closed, the reason is that otherwise we can't develop
+# docs with it
+kill "$MKDOCS_PID" 2>/dev/null
+wait "$MKDOCS_PID" 2>/dev/null
 source "$MERADEB_PATH/bin/meradeb-sub/menu.sh"
