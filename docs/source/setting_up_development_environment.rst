@@ -79,4 +79,4 @@ main default branch
    export MERADEB_REF=$(git branch --show-current)
 
 
-After that its the regular installation proess, isntall whichever components you are testing
+After that its the regular installation process, install whichever components you are testing
