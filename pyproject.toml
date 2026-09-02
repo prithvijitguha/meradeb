@@ -1,5 +1,6 @@
 [dependency-groups]
 dev = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.7.7",
     "pyfiglet>=1.0.4",
-    "sphinx>=9.1.0",
 ]
