@@ -2,9 +2,6 @@ site_name: Meradeb
 docs_dir: docs/source/
 site_dir: docs/build/
 
-palette:
-  scheme: slate
-
 nav:
   - Home: index.md
   - About Meradeb: about_meradeb.md
@@ -14,3 +11,17 @@ nav:
 
 theme:
   name: material
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
