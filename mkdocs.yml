@@ -1,0 +1,11 @@
+site_name: Meradeb
+site_dir: docs/build/html
+nav:
+  - Home: index.md
+  - About Meradeb: about_meradeb.md
+  - Installation Guide: install_guide.md
+  - Setting Up Development Environment: setting_up_development_environment.md
+  - Hotkeys: hotkeys.md
+
+theme:
+  name: material
