@@ -1,0 +1,5 @@
+[dependency-groups]
+dev = [
+    "pyfiglet>=1.0.4",
+    "sphinx>=9.1.0",
+]

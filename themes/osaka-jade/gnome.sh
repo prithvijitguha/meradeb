@@ -3,3 +3,4 @@
 MERADEB_THEME_COLOR="green"
 MERADEB_THEME_BACKGROUND="osaka-jade.jpg"
 source $MERADEB_PATH/themes/set-gnome-theme.sh
+gsettings set org.gnome.shell.extensions.tilingshell window-border-color "#214237"

@@ -5,12 +5,7 @@ gsettings set org.gnome.desktop.wm.keybindings close "['<Super>w']"
 
 # Make it easy to maximize like you can fill left/right
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
-
-# Make it easy to resize undecorated windows
-gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Super>BackSpace']"
-
-# For keyboards that only have a start/stop button for music, like Logitech MX Keys Mini
-gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Shift>AudioPlay']"
+gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>h']"
 
 # Full-screen with title/navigation bar
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Shift>F11']"
@@ -22,7 +17,7 @@ gsettings set org.gnome.desktop.wm.preferences num-workspaces 6
 # Disable the hotkeys in the Dash to Dock extension (most likely culprit)
 gsettings set org.gnome.shell.extensions.dash-to-dock hot-keys false
 
-# Use alt for pinned apps
+# Use Super for pinned apps
 gsettings set org.gnome.shell.keybindings switch-to-application-1 "['<Super>1']"
 gsettings set org.gnome.shell.keybindings switch-to-application-2 "['<Super>2']"
 gsettings set org.gnome.shell.keybindings switch-to-application-3 "['<Super>3']"
@@ -34,17 +29,26 @@ gsettings set org.gnome.shell.keybindings switch-to-application-8 "['<Super>8']"
 gsettings set org.gnome.shell.keybindings switch-to-application-9 "['<Super>9']"
 
 # Use super for workspaces
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Super>3']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Super>4']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Super>5']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>6']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Alt>1']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Alt>2']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Alt>3']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Alt>4']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Alt>5']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Alt>6']"
 
-# Reserve slots for custom keybindings
-gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/']"
+# Vim Navigation between windows
+gsettings set org.gnome.shell.extensions.tilingshell focus-window-left "['<Super><Shift>h']"
+gsettings set org.gnome.shell.extensions.tilingshell focus-window-right "['<Super><Shift>l']"
+gsettings set org.gnome.shell.extensions.tilingshell focus-window-up "['<Super><Shift>k']"
+gsettings set org.gnome.shell.extensions.tilingshell focus-window-down "['<Super><Shift>j']"
 
-# Set ulauncher to Super+Space
+# Focus window for gnome
+gsettings set org.gnome.shell.extensions.tilingshell highlight-current-window "['true']"
+gsettings set org.gnome.shell.extensions.tilingshell enable-window-border true
+gsettings set org.gnome.shell.extensions.tilingshell window-use-custom-border-color true
+gsettings set org.gnome.shell.extensions.tilingshell window-border-width 3
+
+# Set Wofi to Super+Space
 gsettings set org.gnome.desktop.wm.keybindings switch-input-source "@as []"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'wofi'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'sh -c wofi'
