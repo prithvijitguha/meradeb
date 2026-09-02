@@ -1,3 +1,4 @@
 #!/bin/bash
 
+source $MERADEB_PATH/bin/meradeb-sub/header.sh
 source $MERADEB_PATH/bin/meradeb-sub/menu.sh
