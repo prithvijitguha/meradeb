@@ -11,4 +11,5 @@ Type=Application
 Icon=$HOME/.local/share/meradeb/applications/icons/Music.png
 Categories=GTK;
 StartupNotify=true
+StartupWMClass=music.youtube.com
 EOF
