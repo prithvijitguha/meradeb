@@ -2,10 +2,9 @@
 .venv
 
 # Sphinx build output directory
-_build/
-build/
 docs/_build/
 doc/_build/
+docs/build/doctrees/*
 
 # Sphinx-autobuild cache
 .sphinx-autobuild/
