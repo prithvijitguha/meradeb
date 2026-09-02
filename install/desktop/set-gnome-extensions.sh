@@ -48,7 +48,7 @@ gsettings set org.gnome.shell.extensions.tactile gap-size 32
 gsettings set org.gnome.shell.extensions.tilingshell show-indicator false
 
 # Configure Just Perfection
-gsettings set org.gnome.shell.extensions.just-perfection animation 2
+gsettings set org.gnome.shell.extensions.just-perfection animation 6
 gsettings set org.gnome.shell.extensions.just-perfection dash-app-running true
 gsettings set org.gnome.shell.extensions.just-perfection workspace true
 gsettings set org.gnome.shell.extensions.just-perfection workspace-popup false
