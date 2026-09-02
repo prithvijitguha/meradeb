@@ -7,9 +7,6 @@ font-size = 11
 
 background-opacity = 0.92
 
-maximize = true
-window-save-state = always
-
 # Window
 window-theme = ghostty
 window-padding-x = 14
