@@ -45,7 +45,7 @@ gsettings set org.gnome.shell.extensions.tactile row-1 1
 gsettings set org.gnome.shell.extensions.tactile gap-size 32
 
 # Configure tilingshell
-gsettings set org.gnome.shell.extensions.tilingshell show-indicator true
+gsettings set org.gnome.shell.extensions.tilingshell show-indicator false
 
 # Configure Just Perfection
 gsettings set org.gnome.shell.extensions.just-perfection animation 2
