@@ -3,22 +3,13 @@
 Below are some useful resources for learning more about forking and pull
 requests on GitHub:
 
-- the [GitHub documentation for forking a
-    repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
-- the [GitHub documentation for collaborating with pull
-    requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests).
-- the [GitHub documentation for working with
-    forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks).
+- the <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">GitHub documentation for forking a repo</a>.
+- the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests" target="_blank">GitHub documentation for collaborating with pull requests</a>.
+- the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks" target="_blank">GitHub documentation for working with forks</a>.
 
 ## Getting started with Git
 
-[GitHub has
-instructions](https://docs.github.com/en/get-started/quickstart/set-up-git)
-for installing git, setting up your SSH key, and configuring git. All
-these steps need to be completed before you can work seamlessly between
-your local repository and GitHub.
-
-## Create a fork of Meradeb
+<a href="https://docs.github.com/en/get-started/quickstart/set-up-git" target="_blank">GitHub has instructions</a> for installing git, setting up your SSH key, and configuring git. All these steps need to be completed before you can work seamlessly between your local repository and GitHub.## Create a fork of Meradeb
 
 You will need your own copy of Meradeb (aka fork) to work on the code.
 Go to the [Meradeb page](https://github.com/prithvijitguha/meradeb) and

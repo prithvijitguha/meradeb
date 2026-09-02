@@ -11,6 +11,8 @@ nav:
 
 theme:
   name: material
+  icon:
+    logo: fontawesome/brands/debian
   palette:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
