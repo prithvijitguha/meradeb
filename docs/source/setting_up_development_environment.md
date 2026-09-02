@@ -3,11 +3,11 @@
 Below are some useful resources for learning more about forking and pull
 requests on GitHub:
 
--   the [GitHub documentation for forking a
+- the [GitHub documentation for forking a
     repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
--   the [GitHub documentation for collaborating with pull
+- the [GitHub documentation for collaborating with pull
     requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests).
--   the [GitHub documentation for working with
+- the [GitHub documentation for working with
     forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks).
 
 ## Getting started with Git
@@ -18,7 +18,7 @@ for installing git, setting up your SSH key, and configuring git. All
 these steps need to be completed before you can work seamlessly between
 your local repository and GitHub.
 
-## Create a fork of pandas {#contributing.forking}
+## Create a fork of Meradeb
 
 You will need your own copy of Meradeb (aka fork) to work on the code.
 Go to the [Meradeb page](https://github.com/prithvijitguha/meradeb) and

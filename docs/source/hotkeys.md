@@ -1,6 +1,6 @@
-**Meradeb Hotkeys** ===============
+# Meradeb Hotkeys
 
-# Window Management
+## Window Management
 
   ------------------------------------------------
   Hotkey                 Action
@@ -15,10 +15,10 @@
 
   `Super + t`            Check window layout
 
-  `Shift + F11`          Fullscreen
+`Shift + F11`          Fullscreen
   ------------------------------------------------
 
-# Window Navigation
+## Window Navigation
 
   ----------------------------------------------------------
   Hotkey                 Action
@@ -31,10 +31,10 @@
 
   `Alt + Shift + k`      Shift focus to window above
 
-  `Shift + F11`          Fullscreen
+`Shift + F11`          Fullscreen
   ----------------------------------------------------------
 
-# Workspaces
+## Workspaces
 
   ------------------------------------------------
   Hotkey                 Action
@@ -49,10 +49,10 @@
 
   `Alt + 5`              Workspace 5
 
-  `Alt + 6`              Workspace 6
+`Alt + 6`              Workspace 6
   ------------------------------------------------
 
-# Pinned/Dock Applications
+## Pinned/Dock Applications
 
   ---------------------------------------------------------
   Hotkey                 Action
@@ -61,7 +61,7 @@
 
   ---------------------------------------------------------
 
-# Applications
+## Applications
 
   ------------------------------------------------
   Hotkey                 Action
@@ -72,5 +72,5 @@
 
   `Shift + Alt + 1`      New Ghostty window
 
-  `Shift + Alt + 2`      New Firefox window
+`Shift + Alt + 2`      New Firefox window
   ------------------------------------------------
