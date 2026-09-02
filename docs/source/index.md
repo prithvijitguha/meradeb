@@ -1,5 +1,7 @@
 # Meradeb documentation
 
-::: {.toctree maxdepth="1" caption="Contents:"}
-install_guide about_meradeb hotkeys setting_up_development_environment
-:::
+Meradeb(MAY-rah or meh-rah) it translates to \"MY\" and is taken from
+the Hindi word \'mera\'. Its meant to signify a customization of Debian
+for myself and through my vision.
+
+It is a customized version of Debian(basically Debian + cool dotfiles)
