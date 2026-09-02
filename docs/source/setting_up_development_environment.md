@@ -12,7 +12,7 @@ requests on GitHub:
 <a href="https://docs.github.com/en/get-started/quickstart/set-up-git" target="_blank">GitHub has instructions</a> for installing git, setting up your SSH key, and configuring git. All these steps need to be completed before you can work seamlessly between your local repository and GitHub.## Create a fork of Meradeb
 
 You will need your own copy of Meradeb (aka fork) to work on the code.
-Go to the [Meradeb page](https://github.com/prithvijitguha/meradeb) and
+Go to the <a href="https://github.com/prithvijitguha/meradeb" target="_blank">Meradeb page</a> and
 hit the `Fork` button. Please uncheck the box to copy only the main
 branch before selecting `Create Fork`. You will want to clone your fork
 to your machine
