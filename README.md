@@ -13,10 +13,14 @@ which didn't really seem sensible to me. Overall it seemed like someone who just
 
 ## Installations to run
 
-Note: Meradeb requires non free debian packages to be present for this to work
-
 ```bash
 curl -fsSL https://raw.githubusercontent.com/prithvijitguha/meradeb/main/boot.sh | bash
+```
+
+Note: Meradeb requires non free debian packages to be present for this to work. If you want to add this with a script use this command
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/prithvijitguha/meradeb/refs/heads/main/install/update-debian-repos.sh | bash
 ```
 
 ## Differences between Omakub and Meradeb
@@ -26,8 +30,8 @@ curl -fsSL https://raw.githubusercontent.com/prithvijitguha/meradeb/main/boot.sh
 - Ulauncher -> Wofi
 - Kept original hotkeys for apps as much as possible
 - Added more themes
-- Improvements on menu, installation components and organized scripts. 
-- Added improvements with gnome auto move windows and workspace naming. 
+- Improvements on menu, installation components and organized scripts.
+- Added improvements with gnome auto move windows and workspace naming.
 - Removed some gnome extensions and settings from omakub
 - Removed migrations and bloated applications
 
