@@ -10,11 +10,6 @@ gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>h']"
 # Full-screen with title/navigation bar
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Shift>F11']"
 
-# Shutdown
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/shutdown/ name 'Shutdown'
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/shutdown/ command 'systemctl poweroff'
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/shutdown/ binding '<Super><Shift>s'
-
 # Use 6 fixed workspaces instead of dynamic mode
 gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 6
