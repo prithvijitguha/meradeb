@@ -15,7 +15,7 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
     sed -i "s/color_theme = \".*\"/color_theme = \"Default\"/g" ~/.config/btop/btop.conf
   fi
   source $MERADEB_PATH/themes/$THEME/gnome.sh
-  source $OMAKUB_PATH/themes/$THEME/tophat.sh
+  source $MERADEB_PATH/themes/$THEME/tophat.sh
 fi
 
 source $MERADEB_PATH/bin/meradeb-sub/menu.sh
