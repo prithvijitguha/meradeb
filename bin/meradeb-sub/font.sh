@@ -48,4 +48,5 @@ case $choice in
   ;;
 esac
 
+gum log --structured --level warning "Please note font changes require closing and reopening ghostty terminal"
 source $MERADEB_PATH/bin/meradeb-sub/menu.sh
