@@ -18,8 +18,9 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
   source $MERADEB_PATH/themes/$THEME/tophat.sh
 
   # For ghostty
-  sed -i "s/^theme = .*/theme = $THEME/" ~/.config/ghostty/config
-
+  if ghostty +list-themes | grep -Fxq "$THEME"; then
+    sed -i "s/^theme = .*/theme = $THEME/" ~/.config/ghostty/config
+  fi
 fi
 
 source $MERADEB_PATH/bin/meradeb-sub/menu.sh
