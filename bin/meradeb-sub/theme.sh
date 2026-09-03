@@ -8,8 +8,8 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
     cp $MERADEB_PATH/themes/$THEME/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
   fi
 
-  if [ -f "$OMAKUB_PATH/themes/$THEME/btop.theme" ]; then
-    cp $OMAKUB_PATH/themes/$THEME/btop.theme ~/.config/btop/themes/$THEME.theme
+  if [ -f "$MERADEB_PATH/themes/$THEME/btop.theme" ]; then
+    cp $MERADEB_PATH/themes/$THEME/btop.theme ~/.config/btop/themes/$THEME.theme
     sed -i "s/color_theme = \".*\"/color_theme = \"$THEME\"/g" ~/.config/btop/btop.conf
   else
     sed -i "s/color_theme = \".*\"/color_theme = \"Default\"/g" ~/.config/btop/btop.conf
