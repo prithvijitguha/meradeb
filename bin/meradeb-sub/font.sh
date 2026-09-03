@@ -19,6 +19,8 @@ set_font() {
   fi
 
   gsettings set org.gnome.desktop.interface monospace-font-name "$font_name 10"
+  # Update Ghostty font
+  sed -i "s/^font-family = .*/font-family = $font_name/" ~/.config/ghostty/config
 }
 
 if [ "$#" -gt 1 ]; then
