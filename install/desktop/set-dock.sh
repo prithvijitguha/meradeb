@@ -49,8 +49,8 @@ done
 
 favorites_list=$(printf "'%s'," "${installed_apps[@]}")
 favorites_list="[${favorites_list%,}]"
-gum style --bold "Favorites:"
-gum style "$(printf ' %s\n' "${installed_apps[@]}")"
+gum log --structured --level info "Favorites:"
+gum log --structured --level info "$(printf ' %s\n' "${installed_apps[@]}")"
 
 gsettings set org.gnome.shell favorite-apps "$favorites_list"
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button false
