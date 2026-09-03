@@ -55,10 +55,10 @@ gsettings set org.gnome.shell.extensions.just-perfection workspace-popup false
 
 # Configure Blur My Shell
 gsettings set org.gnome.shell.extensions.blur-my-shell.appfolder blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.lockscreen blur false
+gsettings set org.gnome.shell.extensions.blur-my-shell.lockscreen blur true
 gsettings set org.gnome.shell.extensions.blur-my-shell.screenshot blur false
 gsettings set org.gnome.shell.extensions.blur-my-shell.window-list blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.panel blur false
+gsettings set org.gnome.shell.extensions.blur-my-shell.panel blur true
 gsettings set org.gnome.shell.extensions.blur-my-shell.overview blur true
 gsettings set org.gnome.shell.extensions.blur-my-shell.overview pipeline 'pipeline_default'
 gsettings set org.gnome.shell.extensions.blur-my-shell.dash-to-dock blur true
