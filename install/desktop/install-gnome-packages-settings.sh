@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Installing gnome extensions and workspace settings"
+gum log --structured --level info "Installing gnome extensions and workspace settings"
 source ~/.local/share/meradeb/install/desktop/set-gnome-extensions.sh
 source ~/.local/share/meradeb/install/desktop/fonts.sh
 source ~/.local/share/meradeb/install/desktop/set-gnome-theme.sh

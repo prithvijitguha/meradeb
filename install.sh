@@ -54,4 +54,4 @@ case "$MODE" in
   ;;
 esac
 
-echo "Installation completed!"
+gum log --structured --level info "Installation complete"
