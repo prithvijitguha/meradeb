@@ -48,6 +48,15 @@ gsettings set org.gnome.shell.extensions.tilingshell enable-window-border true
 gsettings set org.gnome.shell.extensions.tilingshell window-use-custom-border-color true
 gsettings set org.gnome.shell.extensions.tilingshell window-border-width 3
 
+# Register GNOME custom shortcuts
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \
+  "[
+  '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/',
+  '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/',
+  '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/',
+  '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/'
+]"
+
 # Set Wofi to Super+Space
 gsettings set org.gnome.desktop.wm.keybindings switch-input-source "@as []"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'wofi'
