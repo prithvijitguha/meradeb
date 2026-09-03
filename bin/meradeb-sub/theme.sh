@@ -16,6 +16,10 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
   fi
   source $MERADEB_PATH/themes/$THEME/gnome.sh
   source $MERADEB_PATH/themes/$THEME/tophat.sh
+
+  # For ghostty
+  sed -i "s/^theme = .*/theme = $THEME/" ~/.config/ghostty/config
+
 fi
 
 source $MERADEB_PATH/bin/meradeb-sub/menu.sh
