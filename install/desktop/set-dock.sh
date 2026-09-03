@@ -43,15 +43,16 @@ for app in "${apps[@]}"; do
   if [[ -n "$desktop" ]]; then
     installed_apps+=("$desktop")
   else
-    gum log --structured --level info "Skipping $app (not installed)"
+    echo "Skipping $app (not installed)"
   fi
 done
 
-gum log --structured --level info "${installed_apps[@]}"
+favorites_list=$(printf "'%s'," "${installed_apps[@]}")
 favorites_list="[${favorites_list%,}]"
-
-gum log --structured --level info "Favorites:"
-gum log --structured --level info "${installed_apps[@]}"
+gum style --bold "Favorites:"
+gum style "$(printf ' %s\n' "${installed_apps[@]}")"
 
 gsettings set org.gnome.shell favorite-apps "$favorites_list"
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button false
+
+gum log --structured --level info "Favorites updated"
