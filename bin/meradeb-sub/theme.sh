@@ -21,6 +21,7 @@ THEME=$(echo "$THEME" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 THEME_DIR="$MERADEB_PATH/themes/$THEME"
 COLORS="$THEME_DIR/colors.toml"
 
+# I don't know regex, its the one use of AI that seems to be very helpful
 get_color() {
   sed -n "s/^$1 = \"\\(#[0-9a-fA-F]*\\)\"$/\1/p" "$COLORS"
 }
@@ -88,6 +89,7 @@ theme[process_mid]="$(get_color blue)"
 theme[process_end]="$(get_color magenta)"
 EOF
 
+# for BTOP substitute the theme value with sed in the file itself
 sed -i \
   "s/^color_theme = .*/color_theme = \"$THEME\"/" \
   "$HOME/.config/btop/btop.conf"
@@ -109,4 +111,5 @@ if ghostty +list-themes 2>/dev/null | grep -Fxq "$THEME"; then
     "$HOME/.config/ghostty/config"
 fi
 
+# TODO: Add the set-gnome-file here, doesn't make sense for it to be in themes specifically
 source "$MERADEB_PATH/bin/meradeb-sub/menu.sh"
