@@ -16,6 +16,8 @@ THEME=$(printf '%s\n' "${THEMES[@]}" |
 
 THEME=$(echo "$THEME" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
+# Each directory in themes contains a colors.toml
+# We use that colors.toml to generate the tophat and btop files
 THEME_DIR="$MERADEB_PATH/themes/$THEME"
 COLORS="$THEME_DIR/colors.toml"
 
@@ -29,9 +31,7 @@ if [ -d "$HOME/.config/nvim" ] && [ -f "$THEME_DIR/neovim.lua" ]; then
     "$HOME/.config/nvim/lua/plugins/theme.lua"
 fi
 
-# Generate btop themes dynamically
-mkdir -p "$HOME/.config/btop/themes"
-
+# Generate the btop confg dynamically
 cat >"$HOME/.config/btop/themes/$THEME.theme" <<EOF
 theme[main_bg]="$(get_color background)"
 theme[main_fg]="$(get_color foreground)"
@@ -93,8 +93,6 @@ sed -i \
   "$HOME/.config/btop/btop.conf"
 
 # GNOME
-export MERADEB_THEME_COLOR="magenta"
-
 if [ -f "$THEME_DIR/gnome.sh" ]; then
   source "$THEME_DIR/gnome.sh"
 fi
@@ -103,6 +101,8 @@ fi
 gsettings set org.gnome.shell.extensions.tophat meter-fg-color "$(get_color magenta)"
 
 # Ghostty
+# Not all themes are available in ghostty, so first we check if the theme is available
+# if not we keep it as is
 if ghostty +list-themes 2>/dev/null | grep -Fxq "$THEME"; then
   sed -i \
     "s/^theme = .*/theme = $THEME/" \
