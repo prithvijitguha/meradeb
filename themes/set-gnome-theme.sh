@@ -6,13 +6,37 @@ gsettings set org.gnome.desktop.interface gtk-theme "Yaru-$MERADEB_THEME_COLOR-d
 gsettings set org.gnome.desktop.interface icon-theme "Yaru-$MERADEB_THEME_COLOR"
 gsettings set org.gnome.desktop.interface accent-color "$MERADEB_THEME_COLOR" 2>/dev/null || true
 
-BACKGROUND_ORG_PATH="$HOME/.local/share/meradeb/themes/background/$MERADEB_THEME_BACKGROUND"
+BACKGROUND_DIR="$MERADEB_PATH/themes/$THEME/backgrounds"
 BACKGROUND_DEST_DIR="$HOME/.local/share/backgrounds"
-BACKGROUND_DEST_PATH="$BACKGROUND_DEST_DIR/$(echo $MERADEB_THEME_BACKGROUND | tr '/' '-')"
 
-if [ ! -d "$BACKGROUND_DEST_DIR" ]; then mkdir -p "$BACKGROUND_DEST_DIR"; fi
+set_background() {
+  local background="$1"
+  local name
+  local dest
 
-[ ! -f $BACKGROUND_DEST_PATH ] && cp $BACKGROUND_ORG_PATH $BACKGROUND_DEST_PATH
-gsettings set org.gnome.desktop.background picture-uri $BACKGROUND_DEST_PATH
-gsettings set org.gnome.desktop.background picture-uri-dark $BACKGROUND_DEST_PATH
-gsettings set org.gnome.desktop.background picture-options 'zoom'
+  name=$(basename "$background")
+  dest="$BACKGROUND_DEST_DIR/$name"
+
+  [ -f "$dest" ] || cp "$background" "$dest"
+
+  gsettings set org.gnome.desktop.background picture-uri "$dest"
+  gsettings set org.gnome.desktop.background picture-uri-dark "$dest"
+  gsettings set org.gnome.desktop.background picture-options 'zoom'
+}
+
+BACKGROUNDS=()
+
+for background in "$BACKGROUND_DIR"/*; do
+  [ -f "$background" ] || continue
+  BACKGROUNDS+=("$(basename "$background")")
+done
+
+while true; do
+  BACKGROUND=$(printf '%s\n' "${BACKGROUNDS[@]}" |
+    gum choose "Done" --header "Choose your background" --height 12)
+
+  [ -z "$BACKGROUND" ] && exit 0
+  [ "$BACKGROUND" = "Done" ] && break
+
+  set_background "$BACKGROUND_DIR/$BACKGROUND"
+done

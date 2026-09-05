@@ -111,5 +111,4 @@ if ghostty +list-themes 2>/dev/null | grep -Fxq "$THEME"; then
     "$HOME/.config/ghostty/config"
 fi
 
-# TODO: Add the set-gnome-file here, doesn't make sense for it to be in themes specifically
 source "$MERADEB_PATH/bin/meradeb-sub/menu.sh"
