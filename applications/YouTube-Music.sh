@@ -10,5 +10,6 @@ Terminal=false
 Type=Application
 Icon=$HOME/.local/share/meradeb/applications/icons/Music.png
 Categories=GTK;
-StartupNotify=true;
+StartupNotify=true
+StartupWMClass=chrome-music.youtube.com__-Default
 EOF

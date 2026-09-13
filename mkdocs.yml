@@ -4,15 +4,14 @@ site_dir: docs/build/
 
 nav:
   - Home: index.md
-  - About Meradeb: about_meradeb.md
   - Hotkeys: hotkeys.md
   - Installation Guide: install_guide.md
   - Setting Up Development Environment: setting_up_development_environment.md
 
 theme:
   name: material
-  icon:
-    logo: fontawesome/brands/debian
+  logo: static/meradeb_full_logo.svg
+  favicon: static/meradeb_full_logo.svg
   palette:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"

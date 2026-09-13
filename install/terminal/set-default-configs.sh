@@ -1,10 +1,7 @@
 #!/bin/bash
 
 # Setup default configs
-cp ~/.local/share/meradeb/configs/.p10.zsh ~/.p10.zsh
-cp ~/.local/share/meradeb/configs/.profile ~/.profile
-cp ~/.local/share/meradeb/configs/.zshrc ~/.zshrc
-cp ~/.local/share/meradeb/configs/.tmux.conf ~/.tmux.conf
+cp -a ~/.local/share/meradeb/configs/. ~/.config/
 
 # Use meradeb btop config
 mkdir -p ~/.config/btop/themes

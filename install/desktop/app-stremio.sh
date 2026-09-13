@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-flatpak install -y flathub com.stremio.Stremio
+flatpak install flathub com.stremio.Stremio

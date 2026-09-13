@@ -1,7 +1,8 @@
 #!/bin/bash
 
-pipx install gnome-extensions-cli --system-site-packages
+gum log --structured --level info "Installing Gnome extensions"
 
+pipx install gnome-extensions-cli --system-site-packages
 # Install new extensions
 gext install tilingshell@ferrarodomenico.com
 gext install tactile@lundal.io
@@ -10,6 +11,7 @@ gext install blur-my-shell@aunetx
 gext install space-bar@luchrioh
 gext install tophat@fflewddur.github.io
 gext install auto-move-windows@gnome-shell-extensions.gcampax.github.com
+gext install dash-to-dock@micxgx.gmail.com
 
 # Compile gsettings schemas
 sudo cp ~/.local/share/gnome-shell/extensions/tilingshell@ferrarodomenico.com/schemas/org.gnome.shell.extensions.tilingshell.gschema.xml \
@@ -31,6 +33,12 @@ sudo cp ~/.local/share/gnome-shell/extensions/tophat@fflewddur.github.io/schemas
   /usr/share/glib-2.0/schemas/
 
 sudo cp ~/.local/share/gnome-shell/extensions/auto-move-windows@gnome-shell-extensions.gcampax.github.com/schemas/org.gnome.shell.extensions.auto-move-windows.gschema.xml \
+  /usr/share/glib-2.0/schemas/
+
+sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml \
+  /usr/share/glib-2.0/schemas/
+
+sudo cp ~/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml \
   /usr/share/glib-2.0/schemas/
 
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
@@ -80,3 +88,9 @@ gsettings set org.gnome.shell.extensions.tophat show-disk false
 gsettings set org.gnome.shell.extensions.tophat show-mem true
 gsettings set org.gnome.shell.extensions.tophat show-fs false
 gsettings set org.gnome.shell.extensions.tophat network-usage-unit bytes
+
+# Configure dash-to-dock
+gnome-extensions enable dash-to-dock@micxgx.gmail.com
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
+gsettings set org.gnome.shell.extensions.dash-to-dock icon-size-fixed false
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64

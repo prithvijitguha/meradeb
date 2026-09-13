@@ -8,3 +8,5 @@ source ~/.local/share/meradeb/applications/Meradeb.sh
 source ~/.local/share/meradeb/applications/Neovim.sh
 source ~/.local/share/meradeb/applications/WhatsApp.sh
 source ~/.local/share/meradeb/applications/YouTube-Music.sh
+
+update-desktop-database ~/.local/share/applications
