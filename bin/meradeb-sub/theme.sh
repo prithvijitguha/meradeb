@@ -33,7 +33,7 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
   fi
 
   # Tophat
-  gsettings set org.gnome.shell.extensions.tophat meter-fg-color "$(get_color magenta)"
+  gsettings set org.gnome.shell.extensions.tophat meter-fg-color "$(get_color accent)"
 
   # Ghostty
   # Not all themes are available in ghostty, so first we check if the theme is available
