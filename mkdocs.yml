@@ -10,8 +10,8 @@ nav:
 
 theme:
   name: material
-  icon:
-    logo: fontawesome/brands/debian
+  logo: static/meradeb_full_logo.svg
+  favicon: static/meradeb_full_logo.svg
   palette:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
