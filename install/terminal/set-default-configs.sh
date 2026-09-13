@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Setup default configs
-cp -R ~/.local/share/meradeb/configs/* ~/.config/*/
+cp -a ~/.local/share/meradeb/configs/. ~/.config/
 
 # Use meradeb btop config
 mkdir -p ~/.config/btop/themes
