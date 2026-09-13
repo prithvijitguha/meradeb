@@ -26,7 +26,7 @@ sudo cp ~/.local/share/gnome-shell/extensions/just-perfection-desktop@just-perfe
 sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml \
   /usr/share/glib-2.0/schemas/
 
-sudo cp ~/.local/share/gnome-shell/extensions/space-bar@luchrioh/schemas/org.gnome.shell.extensions.space-bar.gschema.xml \
+sudo cp ~/.local/share/gnome-shell/extensions/space-bar@luchrioh/schemas/*.gschema.xml \
   /usr/share/glib-2.0/schemas/
 
 sudo cp ~/.local/share/gnome-shell/extensions/tophat@fflewddur.github.io/schemas/org.gnome.shell.extensions.tophat.gschema.xml \
