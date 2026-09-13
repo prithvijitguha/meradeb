@@ -16,6 +16,31 @@
     }
   },
   "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
+    },
+    {
+      "type": "custom",
+      "key": " OS",
+      "keyColor": "green",
+      "format": "MeraDeb"
+    },
+    {
+      "type": "kernel",
+      "key": "│ ├",
+      "keyColor": "green"
+    },
+    {
+      "type": "packages",
+      "key": "│ ├󰏖",
+      "keyColor": "green"
+    },
+    {
+      "type": "shell",
+      "key": "└ └",
+      "keyColor": "green"
+    },
     "break",
     {
       "type": "custom",
@@ -24,69 +49,38 @@
     {
       "type": "host",
       "key": " PC",
-      "keyColor": "green"
+      "keyColor": "yellow"
     },
     {
       "type": "cpu",
       "key": "│ ├",
       "showPeCoreCount": true,
-      "keyColor": "green"
+      "keyColor": "yellow"
     },
     {
       "type": "gpu",
       "key": "│ ├",
       "detectionMethod": "pci",
-      "keyColor": "green"
+      "keyColor": "yellow"
     },
     {
       "type": "display",
       "key": "│ ├󱄄",
-      "keyColor": "green"
+      "keyColor": "yellow"
     },
     {
       "type": "disk",
       "key": "│ ├󰋊",
-      "keyColor": "green"
+      "keyColor": "yellow"
     },
     {
       "type": "memory",
       "key": "│ ├",
-      "keyColor": "green"
-    },
-    {
-      "type": "swap",
-      "key": "└ └󰓡 ",
-      "keyColor": "green"
+      "keyColor": "yellow"
     },
     {
       "type": "custom",
       "format": "\u001b[90m└────────────────────────────────────────────────────┘"
-    },
-    "break",
-    {
-      "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
-    },
-    {
-      "type": "custom",
-      "key": " OS",
-      "keyColor": "yellow",
-      "format": "MeraDeb"
-    },
-    {
-      "type": "kernel",
-      "key": "│ ├",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "packages",
-      "key": "│ ├󰏖",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "shell",
-      "key": "└ └",
-      "keyColor": "yellow"
     },
     "break",
     {
