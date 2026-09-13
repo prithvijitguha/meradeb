@@ -82,6 +82,7 @@ gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-move-to-work
 gsettings set org.gnome.shell.extensions.space-bar.shortcuts open-menu "@as []"
 
 # Configure TopHat
+gsettings set org.gnome.shell.extensions.tophat use-system-accent false
 gsettings set org.gnome.shell.extensions.tophat show-icons true
 gsettings set org.gnome.shell.extensions.tophat show-cpu true
 gsettings set org.gnome.shell.extensions.tophat show-disk false
