@@ -88,3 +88,9 @@ gsettings set org.gnome.shell.extensions.tophat show-disk false
 gsettings set org.gnome.shell.extensions.tophat show-mem true
 gsettings set org.gnome.shell.extensions.tophat show-fs false
 gsettings set org.gnome.shell.extensions.tophat network-usage-unit bytes
+
+# Configure dash-to-dock
+gnome-extensions enable dash-to-dock@micxgx.gmail.com
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
+gsettings set org.gnome.shell.extensions.dash-to-dock icon-size-fixed false
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
