@@ -1,6 +1,5 @@
 #!/bin/bash
 
-gum log --structured --level info "Installing gnome related extensions and settings"
 source ~/.local/share/meradeb/install/desktop/set-gnome-extensions.sh
 source ~/.local/share/meradeb/install/desktop/fonts.sh
 # Set the everforest theme as default
