@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Fixed number of workspaces
 gsettings set org.gnome.mutter dynamic-workspaces false

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gum log --structured --level info "Setting theme $THEME"
+gum log --structured --level info "Installing theme $THEME"
 
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'
