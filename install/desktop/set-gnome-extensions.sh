@@ -3,7 +3,6 @@
 gum log --structured --level info "Installing Gnome extensions"
 
 pipx install gnome-extensions-cli --system-site-packages
-# Install a fork of tiling shell
 # Install new extensions
 gext install tilingshell@ferrarodomenico.com
 gext install tactile@lundal.io
@@ -37,6 +36,9 @@ sudo cp ~/.local/share/gnome-shell/extensions/auto-move-windows@gnome-shell-exte
   /usr/share/glib-2.0/schemas/
 
 sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml \
+  /usr/share/glib-2.0/schemas/
+
+sudo cp ~/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml \
   /usr/share/glib-2.0/schemas/
 
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
@@ -86,8 +88,3 @@ gsettings set org.gnome.shell.extensions.tophat show-disk false
 gsettings set org.gnome.shell.extensions.tophat show-mem true
 gsettings set org.gnome.shell.extensions.tophat show-fs false
 gsettings set org.gnome.shell.extensions.tophat network-usage-unit bytes
-
-# Configure dash-to-dock
-gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
-gsettings set org.gnome.shell.extensions.dash-to-dock icon-size-fixed false
-gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
