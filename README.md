@@ -39,9 +39,9 @@ curl -fsSL https://raw.githubusercontent.com/prithvijitguha/meradeb/refs/heads/m
 
 ## Screenshots
 
-![Desktop](./docs/static/meradeb.png)
-![Desktop](./docs/static/meradeb_2.png)
-![Desktop](./docs/static/meradeb_3.png)
+![Desktop](docs/source/static/meradeb.png)
+![Desktop](docs/source/static/meradeb_2.png)
+![Desktop](docs/source/static/meradeb_3.png)
 
 To view the docs please check this page
 [https://meradeb.readthedocs.io/en/latest/](https://meradeb.readthedocs.io/en/latest/)
