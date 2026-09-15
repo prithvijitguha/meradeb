@@ -10,8 +10,6 @@ apps=(
   "Youtube-music"
   "Whatsapp"
   "signal"
-  "Activity"
-  "Neovim"
 )
 
 desktop_dirs=(
@@ -55,6 +53,5 @@ gum log --structured --level info "Favorites:"
 gum log --structured --level info "$(printf ' %s\n' "${installed_apps[@]}")"
 
 gsettings set org.gnome.shell favorite-apps "$favorites_list"
-gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button false
 
 gum log --structured --level info "Favorites updated"
