@@ -4,9 +4,12 @@ site_dir: docs/build/
 
 nav:
   - Home: index.md
-  - Hotkeys: hotkeys.md
-  - Installation Guide: install_guide.md
-  - Setting Up Development Environment: setting_up_development_environment.md
+  - Getting started:
+      - Hotkeys: hotkeys.md
+      - Installation Guide: install_guide.md
+
+  - Contributing:
+      - Setting Up Development Environment: setting_up_development_environment.md
 
 theme:
   name: material
