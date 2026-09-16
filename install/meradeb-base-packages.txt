@@ -1,9 +1,5 @@
 curl
 unzip
-build-essential
-meson
-ninja-build
-pkg-config
 firefox-esr
 rustup bat
 tmux
@@ -11,8 +7,6 @@ fzf
 ripgrep
 bat
 eza
-zoxide
-apache2-utils 
 fd-find 
 btop
 gnome-shell-extension-manager
