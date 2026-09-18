@@ -16,6 +16,5 @@ mesa-vulkan-drivers:i386
 libgl1-mesa-dri:i386
 steam-installer
 vlc
-libreoffice
 chromium
 gnome-tweak-tool
