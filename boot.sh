@@ -40,7 +40,7 @@ if [[ -d ~/.local/share/meradeb/.git ]]; then
   git fetch origin
   git pull --ff-only
 else
-  git clone git@github.com:prithvijitguha/meradeb.git ~/.local/share/meradeb
+  git clone https://github.com/prithvijitguha/meradeb.git ~/.local/share/meradeb
 fi
 
 if [[ $MERADEB_REF != "master" ]]; then
