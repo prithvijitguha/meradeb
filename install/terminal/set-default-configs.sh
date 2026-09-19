@@ -2,6 +2,7 @@
 
 mkdir -p ~/.config
 mkdir -p ~/.config/btop
+mkdir -p ~/.config/btop/themes
 
 cp ~/.local/share/meradeb/configs/.bashrc ~/.config/.bashrc
 cp ~/.local/share/meradeb/configs/.zshrc ~/.config/.zshrc
@@ -16,12 +17,6 @@ cp -r ~/.local/share/meradeb/configs/ghostty ~/.config/ghostty
 cp -r ~/.local/share/meradeb/configs/hunk ~/.config/hunk
 cp -r ~/.local/share/meradeb/configs/neovim ~/.config/nvim
 cp -r ~/.local/share/meradeb/configs/wofi ~/.config/wofi
-
-#
-#
-# Use meradeb btop config
-mkdir -p ~/.config/btop/themes
-cp ~/.local/share/meradeb/configs/btop.conf ~/.config/btop/btop.conf
 
 # Meradeb integration
 export MERADEB_PATH="$HOME/.local/share/meradeb"
