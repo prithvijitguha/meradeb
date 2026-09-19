@@ -1,9 +1,24 @@
 #!/bin/bash
 
-# Setup default configs
-cp -a ~/.local/share/meradeb/configs/. ~/.config/
-# TODO:: Change before meradeb merge
-chezmoi init --branch feature-only-configs https://github.com/prithvijitguha/dotfiles.git
+mkdir -p ~/.config
+mkdir -p ~/.config/btop
+
+cp ~/.local/share/meradeb/configs/.bashrc ~/.config/.bashrc
+cp ~/.local/share/meradeb/configs/.zshrc ~/.config/.zshrc
+cp ~/.local/share/meradeb/configs/.p10.zsh ~/.config/.p10.zsh
+cp ~/.local/share/meradeb/configs/.profile ~/.config/.profile
+cp ~/.local/share/meradeb/configs/.tmux.conf ~/.config/.tmux.conf
+cp ~/.local/share/meradeb/configs/.vimrc ~/.config/.vimrc
+cp ~/.local/share/meradeb/configs/btop.conf ~/.config/btop/btop.conf
+cp -r ~/.local/share/meradeb/configs/.vim ~/.config/.vim
+cp -r ~/.local/share/meradeb/configs/fastfetch ~/.config/fastfetch
+cp -r ~/.local/share/meradeb/configs/ghostty ~/.config/ghostty
+cp -r ~/.local/share/meradeb/configs/hunk ~/.config/hunk
+cp -r ~/.local/share/meradeb/configs/neovim ~/.config/nvim
+cp -r ~/.local/share/meradeb/configs/wofi ~/.config/wofi
+
+#
+#
 # Use meradeb btop config
 mkdir -p ~/.config/btop/themes
 cp ~/.local/share/meradeb/configs/btop.conf ~/.config/btop/btop.conf
