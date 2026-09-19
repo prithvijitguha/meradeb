@@ -14,3 +14,6 @@ pipx
 chromium
 gnome-tweak-tool
 zsh
+meson 
+ninja-build
+
