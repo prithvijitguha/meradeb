@@ -41,12 +41,12 @@ if [[ -d ~/.local/share/meradeb/.git ]]; then
   git pull --ff-only
 else
   git clone https://github.com/prithvijitguha/meradeb.git ~/.local/share/meradeb
+  source ~/.local/share/meradeb/install.sh
 fi
 
 if [[ -n "${MERADEB_REF:-}" && "$MERADEB_REF" != "main" ]]; then
   echo "Using meradeb branch: $MERADEB_REF"
-  cd ~/.local/share/meradeb && git checkout "$MERADEB_REF"
-  cd -
+  git checkout "$MERADEB_REF"
 fi
 
 echo "Installation starting..."
