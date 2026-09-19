@@ -16,4 +16,8 @@ gnome-tweak-tool
 zsh
 meson 
 ninja-build
+pkgconf 
+libwayland-dev 
+libglib2.0-dev 
+libgtk-3-dev
 
