@@ -10,5 +10,6 @@ fd-find
 btop
 gnome-shell-extension-manager
 vlc
+pipx
 chromium
 gnome-tweak-tool
