@@ -27,6 +27,8 @@ case "$MODE" in
   gum log --structured --level info "Installing other desktop packages"
   source ~/.local/share/meradeb/install/desktop/install-other-packages.sh
   source ~/.local/share/meradeb/install/install-applications.sh
+  # Install in the end
+  source ~/.local/share/meradeb/install/terminal/app-omz.sh
   ;;
 "advanced (install individual components)")
   OPTIONS=$(gum choose \
