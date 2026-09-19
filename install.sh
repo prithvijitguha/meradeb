@@ -20,10 +20,10 @@ MODE=$(gum choose \
 
 case "$MODE" in
 "default")
-  gum log --structured --level info "Installing gnome related extensions and settings"
-  source ~/.local/share/meradeb/install/desktop/install-gnome-packages-settings.sh
   gum log --structured --level info "Installing all terminal packages"
   source ~/.local/share/meradeb/install/terminal/install-all-terminal-packages.sh
+  gum log --structured --level info "Installing gnome related extensions and settings"
+  source ~/.local/share/meradeb/install/desktop/install-gnome-packages-settings.sh
   gum log --structured --level info "Installing other desktop packages"
   source ~/.local/share/meradeb/install/desktop/install-other-packages.sh
   source ~/.local/share/meradeb/install/install-applications.sh
