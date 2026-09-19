@@ -23,3 +23,4 @@ if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlightin
 fi
 
 chsh -s $(which zsh)
+exec zsh -l
