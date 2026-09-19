@@ -13,4 +13,3 @@ vlc
 libreoffice
 chromium
 gnome-tweak-tool
-flameshot
