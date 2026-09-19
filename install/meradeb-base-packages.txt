@@ -1,10 +1,9 @@
 curl
 unzip
 firefox-esr
-rustup bat
+rustup
 tmux
 fzf
-ripgrep
 bat
 eza
 fd-find 
