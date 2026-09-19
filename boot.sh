@@ -35,11 +35,17 @@ echo "=> Warning: Meradeb is recommeded for Debian 13 Trixie setups"
 echo -e "\nBegin installation (or abort with ctrl+c)..."
 
 echo "Cloning Meradeb..."
-rm -rf ~/.local/share/meradeb
-git clone git@github.com:prithvijitguha/meradeb.git ~/.local/share/meradeb
-if [[ $MERADEB_REF != "master" ]]; then
+if [[ -d ~/.local/share/meradeb/.git ]]; then
   cd ~/.local/share/meradeb
-  git fetch origin "${MERADEB_REF:-stable}" && git checkout "${MERADEB_REF:-stable}"
+  git fetch origin
+  git pull --ff-only
+else
+  git clone https://github.com/prithvijitguha/meradeb.git ~/.local/share/meradeb
+fi
+
+if [[ -n "${MERADEB_REF:-}" && "$MERADEB_REF" != "main" ]]; then
+  echo "Using meradeb branch: $MERADEB_REF"
+  cd ~/.local/share/meradeb && git checkout "$MERADEB_REF"
   cd -
 fi
 

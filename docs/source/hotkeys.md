@@ -31,7 +31,6 @@
 
   `Super + Shift + k`      Shift focus to window above
 
-`Shift + F11`          Fullscreen
   ----------------------------------------------------------
 
 ## Workspaces
@@ -67,8 +66,6 @@
   Hotkey                 Action
   ---------------------- -------------------------
   `Super + Space`        Wofi launcher
-
-  `Ctrl + Print`         Flameshot screenshot
 
   `Shift + Alt + 1`      New Ghostty window
 
