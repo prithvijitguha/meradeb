@@ -10,5 +10,5 @@ fi
 if [ ! -f "$HOME/.config/fastfetch/config.jsonc" ]; then
   # Use meradeb fastfetch config
   mkdir -p ~/.config/fastfetch
-  cp ~/.local/share/meradeb/configs/config.jsonc ~/.config/fastfetch/config.jsonc
+  cp ~/.local/share/meradeb/configs/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
 fi
