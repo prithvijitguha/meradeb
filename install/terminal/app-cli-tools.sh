@@ -8,18 +8,16 @@ if ! command -v uv >/dev/null 2>&1; then
 fi
 
 # Download and install Node.js:
-if ! command -v node >/dev/null 2>&1; then
-  # Download and install nvm:
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.6/install.sh | bash
-  # in lieu of restarting the shell
-  source "$HOME/.nvm/nvm.sh"
-  # Download and install Node.js:
-  nvm install 24
-  # Verify the Node.js version:
-  node -v # Should print "v24.18.1".
-  # Verify npm version:
-  npm -v # Should print "11.16.0".
-fi
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.6/install.sh | bash
+# in lieu of restarting the shell
+source "$HOME/.nvm/nvm.sh"
+# Download and install Node.js:
+nvm install 24
+# Verify the Node.js version:
+node -v # Should print "v24.18.1".
+# Verify npm version:
+npm -v # Should print "11.16.0".
 
 # EZA
 if ! command -v eza >/dev/null 2>&1; then
