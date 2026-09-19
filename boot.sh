@@ -45,7 +45,7 @@ fi
 
 if [[ -n "${MERADEB_REF:-}" && "$MERADEB_REF" != "main" ]]; then
   echo "Using meradeb branch: $MERADEB_REF"
-  cd ~/.local/share/meradeb && git fetch origin "$MERADEB_REF" && git checkout "$MERADEB_REF"
+  cd ~/.local/share/meradeb && git checkout "$MERADEB_REF"
   cd -
 fi
 
