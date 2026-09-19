@@ -20,4 +20,5 @@ pkgconf
 libwayland-dev 
 libglib2.0-dev 
 libgtk-3-dev
+xclip
 
