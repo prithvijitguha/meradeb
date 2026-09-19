@@ -20,6 +20,8 @@ MODE=$(gum choose \
 
 case "$MODE" in
 "default")
+  gum log --structured --level info "Changing default shell to zsh"
+  source ~/.local/share/meradeb/install/terminal/app-omz.sh
   gum log --structured --level info "Installing all terminal packages"
   source ~/.local/share/meradeb/install/terminal/install-all-terminal-packages.sh
   gum log --structured --level info "Installing other desktop packages"
@@ -27,8 +29,6 @@ case "$MODE" in
   source ~/.local/share/meradeb/install/install-applications.sh
   gum log --structured --level info "Installing gnome related extensions and settings"
   source ~/.local/share/meradeb/install/desktop/install-gnome-packages-settings.sh
-  # Install in the end
-  source ~/.local/share/meradeb/install/terminal/app-omz.sh
   ;;
 "advanced (install individual components)")
   OPTIONS=$(gum choose \
