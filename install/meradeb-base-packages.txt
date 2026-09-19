@@ -13,3 +13,4 @@ vlc
 pipx
 chromium
 gnome-tweak-tool
+zsh
