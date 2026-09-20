@@ -46,6 +46,14 @@ sudo cp ~/.local/share/gnome-shell/extensions/user-accent-colors@fabito02/schema
 
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
+# Configure tilingshell
+gsettings set org.gnome.shell.extensions.tilingshell edge-tiling-mode='default'
+gsettings set org.gnome.shell.extensions.tilingshell enable-autotiling=true
+gsettings set org.gnome.shell.extensions.tilingshell enable-screen-edges-windows-suggestions=true
+gsettings set org.gnome.shell.extensions.tilingshell enable-snap-assistant-windows-suggestions=true
+gsettings set org.gnome.shell.extensions.tilingshell enable-tiling-system-windows-suggestions=true
+gsettings set org.gnome.shell.extensions.tilingshell enable-window-border=true
+
 # Configure Tactile
 gsettings set org.gnome.shell.extensions.tactile col-0 1
 gsettings set org.gnome.shell.extensions.tactile col-1 2
