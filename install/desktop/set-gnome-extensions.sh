@@ -54,9 +54,7 @@ gsettings set org.gnome.shell.extensions.tactile col-3 0
 gsettings set org.gnome.shell.extensions.tactile row-0 1
 gsettings set org.gnome.shell.extensions.tactile row-1 1
 gsettings set org.gnome.shell.extensions.tactile gap-size 32
-
-# Configure tilingshell
-gsettings set org.gnome.shell.extensions.tilingshell show-indicator false
+gsettings set org.gnome.shell.extensions.tactile use-accent-color true
 
 # Configure Just Perfection
 gsettings set org.gnome.shell.extensions.just-perfection animation 6
@@ -98,3 +96,6 @@ gnome-extensions enable dash-to-dock@micxgx.gmail.com
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock icon-size-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
+
+# Ohter gnome settings
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
