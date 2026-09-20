@@ -4,7 +4,15 @@ gum log --structured --level info "Installing Gnome extensions"
 
 pipx install gnome-extensions-cli --system-site-packages
 # Install new extensions
-gext install tilingshell@ferrarodomenico.com
+# TODO: At the moment of this writing tiling shell does not support dynamic dwindling layout, to support that this PR needs to be merged
+# https://github.com/domferr/tilingshell/pull/600 . Once this is merged we can use the original source, until then there is this temp location for install
+# gext install tilingshell@ferrarodomenico.com
+
+# First download tiling shell to a temp location
+# then install from the temp location enable the shell extension
+wget -P /tmp/ https://github.com/J4KE-B/tilingshell/releases/download/v17.3-dynamic.1/tilingshell@ferrarodomenico.com.zip
+# After that install from this temp location
+gnome-extensions enable tilingshell@ferrarodomenico.com
 gext install tactile@lundal.io
 gext install just-perfection-desktop@just-perfection
 gext install blur-my-shell@aunetx
@@ -54,10 +62,15 @@ gsettings set org.gnome.shell.extensions.tactile col-3 0
 gsettings set org.gnome.shell.extensions.tactile row-0 1
 gsettings set org.gnome.shell.extensions.tactile row-1 1
 gsettings set org.gnome.shell.extensions.tactile gap-size 32
-gsettings set org.gnome.shell.extensions.tactile use-accent-color true
 
 # Configure tilingshell
 gsettings set org.gnome.shell.extensions.tilingshell show-indicator false
+gsettings set org.gnome.shell.extensions.tilingshell enable-autotiling true
+gsettings set org.gnome.shell.extensions.tilingshell enable-screen-edges-windows-suggestions true
+gsettings set org.gnome.shell.extensions.tilingshell enable-snap-assistant-windows-suggestions true
+gsettings set org.gnome.shell.extensions.tilingshell enable-tiling-system-windows-suggestions true
+gsettings set org.gnome.shell.extensions.tilingshell show-indicator false
+gsettings set org.gnome.shell.extensions.tilingshell snap-assist-sync-layout false
 
 # Configure Just Perfection
 gsettings set org.gnome.shell.extensions.just-perfection animation 6
