@@ -1,5 +1,7 @@
 #!/bin/bash
 
+gum log --structured --level info "Installing Gnome theme $THEME"
+
 COLORS="$WALLPAPER_DIR/colors.toml"
 
 get_color() {
