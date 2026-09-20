@@ -7,6 +7,7 @@ COLORS="$WALLPAPER_DIR/colors.toml"
 get_color() {
   sed -n "s/^$1 = \"\\(#[0-9a-fA-F]*\\)\"$/\1/p" "$COLORS"
 }
+BACKGROUND_DEST_DIR="$HOME/.local/share/backgrounds"
 
 set_background() {
   local background="$1"
