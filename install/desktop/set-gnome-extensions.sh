@@ -54,6 +54,7 @@ gsettings set org.gnome.shell.extensions.tactile col-3 0
 gsettings set org.gnome.shell.extensions.tactile row-0 1
 gsettings set org.gnome.shell.extensions.tactile row-1 1
 gsettings set org.gnome.shell.extensions.tactile gap-size 32
+gsettings set org.gnome.shell.extensions.tactile use-accent-color true
 
 # Configure tilingshell
 gsettings set org.gnome.shell.extensions.tilingshell show-indicator false
