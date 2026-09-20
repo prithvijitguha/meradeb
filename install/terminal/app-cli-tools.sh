@@ -38,3 +38,9 @@ fi
 if ! command -v hunk >/dev/null 2>&1; then
   git config --global core.pager "hunk pager"
 fi
+
+# Tmux plugin configuration
+if [ -d "$HOME/.tmux/plugins/tpm" ]; then
+  mkdir -p $HOME/.tmux/plugins/
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
