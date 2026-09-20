@@ -12,7 +12,7 @@ pipx install gnome-extensions-cli --system-site-packages
 # then install from the temp location enable the shell extension
 wget -P /tmp/ https://github.com/J4KE-B/tilingshell/releases/download/v17.3-dynamic.1/tilingshell@ferrarodomenico.com.zip
 # After that install from this temp location
-gnome-extensions install --force tilingshell@ferrarodomenico.com
+gnome-extensions install --force /tmp/tilingshell@ferrarodomenico.com
 gext install tactile@lundal.io
 gext install just-perfection-desktop@just-perfection
 gext install blur-my-shell@aunetx
