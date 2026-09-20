@@ -98,3 +98,6 @@ gnome-extensions enable dash-to-dock@micxgx.gmail.com
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock icon-size-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
+
+# Ohter gnome settings
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
