@@ -19,8 +19,8 @@ set_background() {
   gsettings reset org.gnome.desktop.background picture-uri
   gsettings reset org.gnome.desktop.background picture-uri-dark
 
-  gsettings set org.gnome.desktop.background picture-uri "$dest"
-  gsettings set org.gnome.desktop.background picture-uri-dark "$dest"
+  gsettings set org.gnome.desktop.background picture-uri "file://$dest"
+  gsettings set org.gnome.desktop.background picture-uri-dark "file://$dest"
   gsettings set org.gnome.desktop.background picture-options 'zoom'
 }
 
