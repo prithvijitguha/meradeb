@@ -16,6 +16,8 @@ set_background() {
   name=$(basename "$background")
   dest="$BACKGROUND_DEST_DIR/$name"
 
+  gum log --structured --level info "background: $background"
+  gum log --structured --level info "dest: $dest"
   [ -f "$dest" ] || cp "$background" "$dest"
 
   gsettings set org.gnome.desktop.background picture-uri "$dest"
