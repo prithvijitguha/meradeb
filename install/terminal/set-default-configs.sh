@@ -7,7 +7,7 @@ mkdir -p ~/.config/btop/themes
 
 cp ~/.local/share/meradeb/configs/.bashrc ~/.bashrc
 cp ~/.local/share/meradeb/configs/.zshrc ~/.zshrc
-cp ~/.local/share/meradeb/configs/.p10.zsh ~/.p10.zsh
+cp ~/.local/share/meradeb/configs/.p10k.zsh ~/.p10k.zsh
 cp ~/.local/share/meradeb/configs/.profile ~/.profile
 cp ~/.local/share/meradeb/configs/.tmux.conf ~/.tmux.conf
 cp ~/.local/share/meradeb/configs/.vimrc ~/.vimrc
