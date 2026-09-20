@@ -138,7 +138,6 @@ export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/
 # Setup copy alias
 alias copy='xclip -sel clip'
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
 # Created by `pipx` on 2026-06-10 15:19:17
 export PATH="$PATH:$HOME/.local/bin"

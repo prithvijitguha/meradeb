@@ -50,21 +50,8 @@ if [ -n "$WALLPAPER_VALUE" ] && [ "$WALLPAPER_VALUE" != "<< Back" ]; then
   # Get the theme name from the directory
   THEME="$(basename "$WALLPAPER_DIR")"
 
-  COLORS="$WALLPAPER_DIR/colors.toml"
+  source "$MERADEB_PATH/themes/set-gnome-theme.sh"
 
-  get_color() {
-    sed -n "s/^$1 = \"\\(#[0-9a-fA-F]*\\)\"$/\1/p" "$COLORS"
-  }
-
-  # GNOME
-  if [ -f "$WALLPAPER_DIR/gnome.sh" ]; then
-    source "$WALLPAPER_DIR/gnome.sh"
-  fi
-
-  # Tophat
-  gsettings set org.gnome.shell.extensions.tophat meter-fg-color "$(get_color accent)"
-
-  source "$MERADEB_PATH/bin/meradeb-sub/set-gnome-theme.sh"
   source "$MERADEB_PATH/bin/meradeb-sub/menu.sh"
 
 elif [ "$WALLPAPER_VALUE" == "<< Back" ]; then
