@@ -12,7 +12,7 @@ gext install space-bar@luchrioh
 gext install tophat@fflewddur.github.io
 gext install auto-move-windows@gnome-shell-extensions.gcampax.github.com
 gext install dash-to-dock@micxgx.gmail.com
-
+gext install user-accent-colors@fabito02
 # Compile gsettings schemas
 sudo cp ~/.local/share/gnome-shell/extensions/tilingshell@ferrarodomenico.com/schemas/org.gnome.shell.extensions.tilingshell.gschema.xml \
   /usr/share/glib-2.0/schemas/
@@ -39,6 +39,9 @@ sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.g
   /usr/share/glib-2.0/schemas/
 
 sudo cp ~/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml \
+  /usr/share/glib-2.0/schemas/
+
+sudo cp ~/.local/share/gnome-shell/extensions/user-accent-colors@fabito02/schemas/*.gschema.xml \
   /usr/share/glib-2.0/schemas/
 
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
