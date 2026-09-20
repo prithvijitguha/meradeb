@@ -44,6 +44,7 @@ gsettings set org.gnome.shell.extensions.tilingshell focus-window-up "['<Super><
 gsettings set org.gnome.shell.extensions.tilingshell focus-window-down "['<Super><Shift>j']"
 
 # Focus window for gnome
+gsettings set org.gnome.shell.extensions.tilingshell show-indicator false
 gsettings set org.gnome.shell.extensions.tilingshell highlight-current-window "['true']"
 gsettings set org.gnome.shell.extensions.tilingshell enable-window-border true
 gsettings set org.gnome.shell.extensions.tilingshell window-use-custom-border-color true
