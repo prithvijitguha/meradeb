@@ -1,5 +1,6 @@
 #!/bin/bash
 
+gum log --structured --level info "Setting default configs"
 mkdir -p ~/.config
 mkdir -p ~/.config/btop
 mkdir -p ~/.config/btop/themes
