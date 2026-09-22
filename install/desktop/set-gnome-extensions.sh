@@ -48,12 +48,12 @@ sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 gum log --structured --level info "Configuring Tiling Shell"
 # Configure tilingshell
-gsettings set org.gnome.shell.extensions.tilingshell edge-tiling-mode='default'
-gsettings set org.gnome.shell.extensions.tilingshell enable-autotiling=true
-gsettings set org.gnome.shell.extensions.tilingshell enable-screen-edges-windows-suggestions=true
-gsettings set org.gnome.shell.extensions.tilingshell enable-snap-assistant-windows-suggestions=true
-gsettings set org.gnome.shell.extensions.tilingshell enable-tiling-system-windows-suggestions=true
-gsettings set org.gnome.shell.extensions.tilingshell enable-window-border=true
+gsettings set org.gnome.shell.extensions.tilingshell edge-tiling-mode default
+gsettings set org.gnome.shell.extensions.tilingshell enable-autotiling true
+gsettings set org.gnome.shell.extensions.tilingshell enable-screen-edges-windows-suggestions true
+gsettings set org.gnome.shell.extensions.tilingshell enable-snap-assistant-windows-suggestions true
+gsettings set org.gnome.shell.extensions.tilingshell enable-tiling-system-windows-suggestions true
+gsettings set org.gnome.shell.extensions.tilingshell enable-window-border true
 
 # Configure Tactile
 gum log --structured --level info "Configuring Tactile"
