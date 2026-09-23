@@ -1,6 +1,20 @@
 #!/bin/bash
 set -e
 
-distrobox create --image debian:trixie --name meradeb-box --yes
+podman run --rm -it \
+  --name meradeb \
+  debian:trixie \
+  bash -c '
+    apt-get update
+    apt-get install -y git curl bc sudo gum expect
 
-distrobox enter meradeb-box -- curl -fsSL https://raw.githubusercontent.com/prithvijitguha/meradeb/main/boot.sh | bash
+    curl -fsSL https://raw.githubusercontent.com/prithvijitguha/meradeb/main/boot.sh -o /tmp/boot.sh
+
+    expect <<EOF
+set timeout -1
+spawn bash /tmp/boot.sh
+expect "Installation Mode"
+send "\r"
+expect eof
+EOF
+  '
