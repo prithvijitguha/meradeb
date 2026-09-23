@@ -16,3 +16,13 @@ jobs:
         os: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v2
+      - run: |
+          podman run --rm -it \
+          --name meradeb \
+          debian:trixie \
+          bash -c '
+            apt-get update
+            apt-get install -y git curl bc sudo gum expect
+
+            curl -fsSL https://raw.githubusercontent.com/prithvijitguha/meradeb/main/boot.sh -o /tmp/boot.sh
+          '

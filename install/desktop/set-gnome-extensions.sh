@@ -46,15 +46,17 @@ sudo cp ~/.local/share/gnome-shell/extensions/user-accent-colors@fabito02/schema
 
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
+gum log --structured --level info "Configuring Tiling Shell"
 # Configure tilingshell
-gsettings set org.gnome.shell.extensions.tilingshell edge-tiling-mode='default'
-gsettings set org.gnome.shell.extensions.tilingshell enable-autotiling=true
-gsettings set org.gnome.shell.extensions.tilingshell enable-screen-edges-windows-suggestions=true
-gsettings set org.gnome.shell.extensions.tilingshell enable-snap-assistant-windows-suggestions=true
-gsettings set org.gnome.shell.extensions.tilingshell enable-tiling-system-windows-suggestions=true
-gsettings set org.gnome.shell.extensions.tilingshell enable-window-border=true
+gsettings set org.gnome.shell.extensions.tilingshell edge-tiling-mode default
+gsettings set org.gnome.shell.extensions.tilingshell enable-autotiling true
+gsettings set org.gnome.shell.extensions.tilingshell enable-screen-edges-windows-suggestions true
+gsettings set org.gnome.shell.extensions.tilingshell enable-snap-assistant-windows-suggestions true
+gsettings set org.gnome.shell.extensions.tilingshell enable-tiling-system-windows-suggestions true
+gsettings set org.gnome.shell.extensions.tilingshell enable-window-border true
 
 # Configure Tactile
+gum log --structured --level info "Configuring Tactile"
 gsettings set org.gnome.shell.extensions.tactile col-0 1
 gsettings set org.gnome.shell.extensions.tactile col-1 2
 gsettings set org.gnome.shell.extensions.tactile col-2 1
@@ -65,12 +67,14 @@ gsettings set org.gnome.shell.extensions.tactile gap-size 32
 gsettings set org.gnome.shell.extensions.tactile use-accent-color true
 
 # Configure Just Perfection
+gum log --structured --level info "Configuring Just Perfection"
 gsettings set org.gnome.shell.extensions.just-perfection animation 6
 gsettings set org.gnome.shell.extensions.just-perfection dash-app-running true
 gsettings set org.gnome.shell.extensions.just-perfection workspace true
 gsettings set org.gnome.shell.extensions.just-perfection workspace-popup false
 
 # Configure Blur My Shell
+gum log --structured --level info "Configuring Blur my shell"
 gsettings set org.gnome.shell.extensions.blur-my-shell.appfolder blur false
 gsettings set org.gnome.shell.extensions.blur-my-shell.lockscreen blur true
 gsettings set org.gnome.shell.extensions.blur-my-shell.screenshot blur false
@@ -85,12 +89,14 @@ gsettings set org.gnome.shell.extensions.blur-my-shell.dash-to-dock static-blur 
 gsettings set org.gnome.shell.extensions.blur-my-shell.dash-to-dock style-dash-to-dock 0
 
 # Configure Space Bar
+gum log --structured --level info "Configuring Space Bar"
 gsettings set org.gnome.shell.extensions.space-bar.behavior smart-workspace-names false
 gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-activate-workspace-shortcuts false
 gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-move-to-workspace-shortcuts true
 gsettings set org.gnome.shell.extensions.space-bar.shortcuts open-menu "@as []"
 
 # Configure TopHat
+gum log --structured --level info "Configuring TopHat"
 gsettings set org.gnome.shell.extensions.tophat use-system-accent false
 gsettings set org.gnome.shell.extensions.tophat show-icons true
 gsettings set org.gnome.shell.extensions.tophat show-cpu true
@@ -100,10 +106,11 @@ gsettings set org.gnome.shell.extensions.tophat show-fs false
 gsettings set org.gnome.shell.extensions.tophat network-usage-unit bytes
 
 # Configure dash-to-dock
-gnome-extensions enable dash-to-dock@micxgx.gmail.com
+gum log --structured --level info "Configuring dash-to-dock"
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock icon-size-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
 
 # Ohter gnome settings
+gum log --structured --level info "Configuring button layout preferences"
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
