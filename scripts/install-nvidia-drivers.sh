@@ -1,23 +1,20 @@
 #!/bin/bash
 
-apt update
+set -e
 
-apt install -y linux-headers-$(uname -r)
+sudo apt update
 
-add-apt-repository contrib
+sudo apt install -y linux-headers-$(uname -r)
 
-apt update
+sudo apt update
 
 wget https://developer.download.nvidia.com/compute/cuda/repos/debian$(. /etc/os-release && echo $VERSION_ID)/x86_64/cuda-keyring_1.1-1_all.deb
 
-dpkg -i cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
 
-apt update
+sudo apt update
 
-apt install -y nvidia-driver-pinning-595.104.02
+sudo apt -V install -y nvidia-open
 
-apt -V install -y nvidia-open
-
-apt dist-upgrade -y
-
+sudo apt dist-upgrade -y
 reboot
