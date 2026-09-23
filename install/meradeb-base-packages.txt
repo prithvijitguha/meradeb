@@ -12,7 +12,7 @@ gnome-shell-extension-manager
 vlc
 pipx
 chromium
-gnome-tweak-tool
+gnome-tweaks
 zsh
 meson 
 ninja-build
